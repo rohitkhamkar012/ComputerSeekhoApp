@@ -12,9 +12,14 @@ target/
 !/src/main//target/
 !/src/test//target/
 
-# ========================
-# Eclipse / STS
-# ========================
+### Java ###
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+### STS ###
 .apt_generated
 .classpath
 .project
@@ -49,8 +54,6 @@ build/
 # ========================
 .vscode/
 
-# ========================
-# OS-specific files
-# ========================
-.DS_Store
-Thumbs.db
+# JVM crash logs
+hs_err_pid*
+replay_pid*

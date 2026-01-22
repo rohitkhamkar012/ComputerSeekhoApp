@@ -19,6 +19,46 @@ public class PaymentDTO {
         this.paymentTypeDesc = paymentTypeDesc;
     }
 
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+	public String getStudentEmail() {
+		return studentEmail;
+	}
+
+	public void setStudentEmail(String studentEmail) {
+		this.studentEmail = studentEmail;
+	}
+
+	public int getAmount() {
+		return amount;
+	}
+
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+
+	public LocalDate getPaymentDate() {
+		return paymentDate;
+	}
+
+	public void setPaymentDate(LocalDate paymentDate) {
+		this.paymentDate = paymentDate;
+	}
+
+	public String getPaymentTypeDesc() {
+		return paymentTypeDesc;
+	}
+
+	public void setPaymentTypeDesc(String paymentTypeDesc) {
+		this.paymentTypeDesc = paymentTypeDesc;
+	}
+
     // // Getters & Setters
     // public String getStudentName() { return studentName; }
     // public String getStudentEmail() { return studentEmail; }

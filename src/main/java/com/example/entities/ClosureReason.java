@@ -48,7 +48,31 @@ public class ClosureReason {
     @Column(name = "enquirer_name")
     private String enquirerName;
 
-    public ClosureReason(String closureReasonDesc,String enquirerName){
+    public int getClosureReasonId() {
+		return closureReasonId;
+	}
+
+	public void setClosureReasonId(int closureReasonId) {
+		this.closureReasonId = closureReasonId;
+	}
+
+	public String getClosureReasonDesc() {
+		return closureReasonDesc;
+	}
+
+	public void setClosureReasonDesc(String closureReasonDesc) {
+		this.closureReasonDesc = closureReasonDesc;
+	}
+
+	public String getEnquirerName() {
+		return enquirerName;
+	}
+
+	public void setEnquirerName(String enquirerName) {
+		this.enquirerName = enquirerName;
+	}
+
+	public ClosureReason(String closureReasonDesc,String enquirerName){
         this.closureReasonDesc =closureReasonDesc;
         this.enquirerName = enquirerName;
     }
