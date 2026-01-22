@@ -21,7 +21,71 @@ public class Course {
     @Column(name = "course_duration")
     private int courseDuration;
 
-    @Column(length = 200, name = "course_syllabus") 
+    public int getCourseId() {
+		return courseId;
+	}
+
+	public void setCourseId(int courseId) {
+		this.courseId = courseId;
+	}
+
+	public String getCourseName() {
+		return courseName;
+	}
+
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
+	}
+
+	public String getCourseDescription() {
+		return courseDescription;
+	}
+
+	public void setCourseDescription(String courseDescription) {
+		this.courseDescription = courseDescription;
+	}
+
+	public int getCourseDuration() {
+		return courseDuration;
+	}
+
+	public void setCourseDuration(int courseDuration) {
+		this.courseDuration = courseDuration;
+	}
+
+	public String getCourseSyllabus() {
+		return courseSyllabus;
+	}
+
+	public void setCourseSyllabus(String courseSyllabus) {
+		this.courseSyllabus = courseSyllabus;
+	}
+
+	public double getCourseFee() {
+		return courseFee;
+	}
+
+	public void setCourseFee(double courseFee) {
+		this.courseFee = courseFee;
+	}
+
+	public boolean isCourseIsActive() {
+		return courseIsActive;
+	}
+
+	public void setCourseIsActive(boolean courseIsActive) {
+		this.courseIsActive = courseIsActive;
+	}
+
+	public String getCoverPhoto() {
+		return coverPhoto;
+	}
+
+	public void setCoverPhoto(String coverPhoto) {
+		this.coverPhoto = coverPhoto;
+	}
+
+	@Column(length = 200, name = "course_syllabus") 
     private String courseSyllabus;
 
     @Column(name = "course_fee")
