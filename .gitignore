@@ -4,6 +4,13 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Java ###
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
 ### STS ###
 .apt_generated
 .classpath
@@ -31,3 +38,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*

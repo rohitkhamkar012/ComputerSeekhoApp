@@ -1,4 +1,5 @@
 package com.example.repositories;
+
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -14,19 +15,36 @@ import jakarta.transaction.Transactional;
 
 @Repository
 public interface PaymentRepository extends JpaRepository<Payment, Integer> {
-    boolean existsByStudentStudentId(int studentId); 
+
+    boolean existsByStudentStudentId(int studentId);
 
     @Modifying
     @Transactional
-    @Query(value="""
-        update Student s set s.payment_due = s.payment_due - ?2 where s.student_id = ?1
-    """,nativeQuery = true)
-    void updatePaymentDue(int id, double amt);
+    @Query(value = """
+        UPDATE student
+        SET payment_due = payment_due - :amount
+        WHERE student_id = :studentId
+    """, nativeQuery = true)
+    void updatePaymentDue(
+            @Param("studentId") int studentId,
+            @Param("amount") double amount
+    );
 
-    @Query("SELECT new com.example.DTO.PaymentDTO(s.studentName, s.studentEmail, p.amount, p.paymentDate, pt.paymentTypeDesc) " +
-    "FROM Payment p " +
-    "JOIN p.student s " +
-    "JOIN p.paymentTypeId pt " +
-    "WHERE p.paymentId = :id")
-    Optional<PaymentDTO> getPaymentOptional(@Param("id") int id);
+    // ✅ FIXED JPQL (paymentTypeId)
+    @Query("""
+        SELECT new com.example.DTO.PaymentDTO(
+            s.studentName,
+            s.studentEmail,
+            p.amount,
+            p.paymentDate,
+            pt.paymentTypeDesc
+        )
+        FROM Payment p
+        JOIN p.student s
+        JOIN p.paymentTypeId pt
+        WHERE p.paymentId = :paymentId
+    """)
+    Optional<PaymentDTO> getPaymentOptional(
+            @Param("paymentId") int paymentId
+    );
 }
