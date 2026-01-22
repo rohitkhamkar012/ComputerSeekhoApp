@@ -1,11 +1,11 @@
 package com.example.entities;
 import java.time.LocalDate;
 import jakarta.persistence.*;
-import lombok.Data;
+//import lombok.Data;
 
 @Entity
 @Table(name = "enquiry")
-@Data
+//@Data
 public class Enquiry {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -41,7 +41,7 @@ public class Enquiry {
     private String studentName;
 
     @Column(name = "enquiry_counter")
-    private int enquiryCounter;
+    private Integer enquiryCounter;
 
     @Column(name = "closure_reason")
     private String closureReason;
@@ -52,7 +52,7 @@ public class Enquiry {
     @Column(name = "enquiry_is_active", columnDefinition = "BOOLEAN DEFAULT TRUE")
     private boolean enquiryIsActive = true;
 
-	public int getEnquiryId() {
+	public Integer getEnquiryId() {
 		return enquiryId;
 	}
 
@@ -132,11 +132,11 @@ public class Enquiry {
 		this.studentName = studentName;
 	}
 
-	public int getEnquiryCounter() {
+	public Integer getEnquiryCounter() {
 		return enquiryCounter;
 	}
 
-	public void setEnquiryCounter(int enquiryCounter) {
+	public void setEnquiryCounter(Integer enquiryCounter) {
 		this.enquiryCounter = enquiryCounter;
 	}
 
@@ -162,6 +162,12 @@ public class Enquiry {
 
 	public void setEnquiryIsActive(boolean enquiryIsActive) {
 		this.enquiryIsActive = enquiryIsActive;
+	}
+	@PrePersist
+	public void prePersist() {
+	    if (enquiryCounter == null) {
+	        enquiryCounter = 0;
+	    }
 	}
 
 }

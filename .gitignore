@@ -1,42 +1,56 @@
-### Java ###
-*.class
-*.jar
-*.war
-*.ear
-
-### Maven ###
-target/
-!.mvn/wrapper/maven-wrapper.jar
-
-### Spring Boot / STS ###
+# ========================
+# Compiled Java / binaries
+# ========================
 bin/
+target/
+*.class
+
+# ========================
+# Maven wrapper / build
+# ========================
+.mvn/wrapper/maven-wrapper.jar
+!/src/main//target/
+!/src/test//target/
+
+# ========================
+# Eclipse / STS
+# ========================
 .apt_generated
 .classpath
-.factorypath
 .project
-.settings
+.settings/
 .springBeans
-.sts4-cache
+.sts4-cache/
 
-### IntelliJ IDEA ###
-.idea/
+# ========================
+# IntelliJ IDEA
+# ========================
+.idea
 *.iws
 *.iml
+*.iws
 *.ipr
+out/
 
-### VS Code ###
-.vscode/
-
-### NetBeans ###
+# ========================
+# NetBeans
+# ========================
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+!/src/main//build/
+!/src/test//build/
 
-### OS ###
+# ========================
+# VS Code
+# ========================
+.vscode/
+
+# ========================
+# OS-specific files
+# ========================
 .DS_Store
 Thumbs.db

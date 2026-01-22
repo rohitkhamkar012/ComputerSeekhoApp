@@ -13,19 +13,31 @@ import jakarta.transaction.Transactional;
 
 @Repository
 @Transactional
-public interface EnquiryRepository extends JpaRepository<Enquiry, Integer>{
-    @Query(value= """
-    select * from Enquiry where Enquiry.staff_id = (select staff_id from staff where staff_username = :staffUsername) AND enquiry_is_active = true order by follow_up_date
-    """ , nativeQuery = true)
-    List<Enquiry> getbystaffList(@Param(value = "staffUsername") String  staffUsername);
+public interface EnquiryRepository extends JpaRepository<Enquiry, Integer> {
 
-    @Modifying
-	@Query(value = """
-			UPDATE Enquiry SET Enquiry.enquiry_is_active = false WHERE enquiry_id = ?1;
-			""", nativeQuery = true)
-    void deactivateEnquiry(int enquiryId);
+    // 1️⃣ Get enquiries by staff (only active)
+    @Query(value = """
+        SELECT * 
+        FROM enquiry 
+        WHERE staff_id = (
+            SELECT staff_id FROM staff WHERE staff_username = :staffUsername
+        )
+        AND enquiry_is_active = true
+        ORDER BY follow_up_date
+        """, nativeQuery = true)
+    List<Enquiry> getByStaffList(@Param("staffUsername") String staffUsername);
 
+    // ✅ FIXED METHOD NAME
+    List<Enquiry> findByEnquiryIsActiveTrue();
+
+    // 3️⃣ Update enquiry message & increment counter
     @Modifying
-    @Query("UPDATE Enquiry e SET e.enquirerQuery = :enquirerQuery, e.enquiryCounter = e.enquiryCounter + 1 WHERE e.enquiryId = :enquiryId")
-    int updateMessage(@Param("enquiryId") int enquiryId, @Param("enquirerQuery") String enquirerQuery);
+    @Query("""
+        UPDATE Enquiry e
+        SET e.enquirerQuery = :enquirerQuery,
+            e.enquiryCounter = e.enquiryCounter + 1
+        WHERE e.enquiryId = :enquiryId
+    """)
+    int updateMessage(@Param("enquiryId") int enquiryId,
+                      @Param("enquirerQuery") String enquirerQuery);
 }

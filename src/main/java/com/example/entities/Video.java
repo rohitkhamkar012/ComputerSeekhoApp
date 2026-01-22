@@ -1,12 +1,13 @@
 package com.example.entities;
 import jakarta.persistence.*;
-import lombok.Data;
+
+//import lombok.Data;
 
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "video_master")
-@Data
+//@Data
 public class Video {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,7 +37,15 @@ public class Video {
     @JoinColumn(name = "course_id", referencedColumnName = "course_id")
     private Course courseId;
 
-    // Getters and Setters
+    public Course getCourseId() {
+		return courseId;
+	}
+
+	public void setCourseId(Course courseId) {
+		this.courseId = courseId;
+	}
+
+	// Getters and Setters
     public int getVideoId() {
         return videoId;
     }

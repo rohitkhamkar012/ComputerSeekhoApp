@@ -1,5 +1,6 @@
 package com.example.entities;
 import jakarta.persistence.*;
+
 import lombok.Data;
 
 @Data
@@ -29,7 +30,23 @@ public class Image {
         return imageId;
     }
 
-    public void setImageId(int imageId) {
+    public String getImageTitle() {
+		return imageTitle;
+	}
+
+	public void setImageTitle(String imageTitle) {
+		this.imageTitle = imageTitle;
+	}
+
+	public String getImageDescrption() {
+		return imageDescrption;
+	}
+
+	public void setImageDescrption(String imageDescrption) {
+		this.imageDescrption = imageDescrption;
+	}
+
+	public void setImageId(int imageId) {
         this.imageId = imageId;
     }
 
