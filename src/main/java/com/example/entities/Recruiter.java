@@ -32,4 +32,38 @@ public class Recruiter {
     @Column(name = "recruiter_image")
     @NotBlank(message = "add recruiter image")
     private String recruiterPhotoUrl;
+
+	public int getRecruiterId() {
+		return recruiterId;
+	}
+
+	public void setRecruiterId(int recruiterId) {
+		this.recruiterId = recruiterId;
+	}
+
+	public String getRecruiterName() {
+		return recruiterName;
+	}
+
+	public void setRecruiterName(String recruiterName) {
+		this.recruiterName = recruiterName;
+	}
+
+	public String getRecruiterLocation() {
+		return recruiterLocation;
+	}
+
+	public void setRecruiterLocation(String recruiterLocation) {
+		this.recruiterLocation = recruiterLocation;
+	}
+
+	public String getRecruiterPhotoUrl() {
+		return recruiterPhotoUrl;
+	}
+
+	public void setRecruiterPhotoUrl(String recruiterPhotoUrl) {
+		this.recruiterPhotoUrl = recruiterPhotoUrl;
+	}
+    
+    
 }

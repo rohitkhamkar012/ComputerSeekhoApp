@@ -25,4 +25,28 @@ public class ClosureReason {
         this.closureReasonDesc =closureReasonDesc;
         this.enquirerName = enquirerName;
     }
+
+	public int getClosureReasonId() {
+		return closureReasonId;
+	}
+
+	public void setClosureReasonId(int closureReasonId) {
+		this.closureReasonId = closureReasonId;
+	}
+
+	public String getClosureReasonDesc() {
+		return closureReasonDesc;
+	}
+
+	public void setClosureReasonDesc(String closureReasonDesc) {
+		this.closureReasonDesc = closureReasonDesc;
+	}
+
+	public String getEnquirerName() {
+		return enquirerName;
+	}
+
+	public void setEnquirerName(String enquirerName) {
+		this.enquirerName = enquirerName;
+	}
 }

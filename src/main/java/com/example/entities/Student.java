@@ -52,4 +52,102 @@ public class Student {
     @ManyToOne
     @JoinColumn(name = "course_id", referencedColumnName = "course_id")
     private Course course;
+
+	public int getStudentId() {
+		return studentId;
+	}
+
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
+	}
+
+	public int getPaymentDue() {
+		return paymentDue;
+	}
+
+	public void setPaymentDue(int paymentDue) {
+		this.paymentDue = paymentDue;
+	}
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+	public String getStudentAddress() {
+		return studentAddress;
+	}
+
+	public void setStudentAddress(String studentAddress) {
+		this.studentAddress = studentAddress;
+	}
+
+	public String getStudentGender() {
+		return studentGender;
+	}
+
+	public void setStudentGender(String studentGender) {
+		this.studentGender = studentGender;
+	}
+
+	public String getPhotoUrl() {
+		return photoUrl;
+	}
+
+	public void setPhotoUrl(String photoUrl) {
+		this.photoUrl = photoUrl;
+	}
+
+	public LocalDate getStudentDob() {
+		return studentDob;
+	}
+
+	public void setStudentDob(LocalDate studentDob) {
+		this.studentDob = studentDob;
+	}
+
+	public String getStudentQualification() {
+		return studentQualification;
+	}
+
+	public void setStudentQualification(String studentQualification) {
+		this.studentQualification = studentQualification;
+	}
+
+	public String getStudentMobile() {
+		return studentMobile;
+	}
+
+	public void setStudentMobile(String studentMobile) {
+		this.studentMobile = studentMobile;
+	}
+
+	public String getStudentEmail() {
+		return studentEmail;
+	}
+
+	public void setStudentEmail(String studentEmail) {
+		this.studentEmail = studentEmail;
+	}
+
+	public Batch getBatch() {
+		return batch;
+	}
+
+	public void setBatch(Batch batch) {
+		this.batch = batch;
+	}
+
+	public Course getCourse() {
+		return course;
+	}
+
+	public void setCourse(Course course) {
+		this.course = course;
+	}
+    
+    
 }
