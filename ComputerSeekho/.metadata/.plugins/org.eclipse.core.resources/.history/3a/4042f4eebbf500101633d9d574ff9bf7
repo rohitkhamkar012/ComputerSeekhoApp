@@ -1,0 +1,26 @@
+package com.example.repository;
+
+import com.example.entity.CourseMaster;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface CourseMasterRepository extends JpaRepository<CourseMaster, Integer> {
+
+    // 🔹 Find course by name
+    CourseMaster findByCourseName(String courseName);
+
+    // 🔹 Get only active courses
+    List<CourseMaster> findByCourseIsActiveTrue();
+
+    // 🔹 Find courses by age group
+    List<CourseMaster> findByAgeGrpType(String ageGrpType);
+
+    // 🔹 Find courses within fee range
+    List<CourseMaster> findByCourseFeesBetween(Integer minFees, Integer maxFees);
+
+    // 🔹 Find active courses by age group
+    List<CourseMaster> findByAgeGrpTypeAndCourseIsActiveTrue(String ageGrpType);
+}

@@ -1,0 +1,129 @@
+package com.example.dto;
+
+import java.time.LocalDate;
+
+public class CourseMasterDTO {
+
+    private Integer courseId;
+
+    private String courseName;
+
+    private String courseDescription;
+
+    private Integer courseDuration;
+
+    private Integer courseFees;
+
+    private LocalDate courseFeesFrom;
+
+    private LocalDate courseFeesTo;
+
+    private String courseSyllabus;
+
+    private String ageGrpType;
+
+    private Boolean courseIsActive;
+
+    private String coverPhoto;
+
+    // Relation handled via ID only
+    private Integer introVideoId;
+
+    // ===== Getters & Setters =====
+
+    public Integer getCourseId() {
+        return courseId;
+    }
+
+    public void setCourseId(Integer courseId) {
+        this.courseId = courseId;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public String getCourseDescription() {
+        return courseDescription;
+    }
+
+    public void setCourseDescription(String courseDescription) {
+        this.courseDescription = courseDescription;
+    }
+
+    public Integer getCourseDuration() {
+        return courseDuration;
+    }
+
+    public void setCourseDuration(Integer courseDuration) {
+        this.courseDuration = courseDuration;
+    }
+
+    public Integer getCourseFees() {
+        return courseFees;
+    }
+
+    public void setCourseFees(Integer courseFees) {
+        this.courseFees = courseFees;
+    }
+
+    public LocalDate getCourseFeesFrom() {
+        return courseFeesFrom;
+    }
+
+    public void setCourseFeesFrom(LocalDate courseFeesFrom) {
+        this.courseFeesFrom = courseFeesFrom;
+    }
+
+    public LocalDate getCourseFeesTo() {
+        return courseFeesTo;
+    }
+
+    public void setCourseFeesTo(LocalDate courseFeesTo) {
+        this.courseFeesTo = courseFeesTo;
+    }
+
+    public String getCourseSyllabus() {
+        return courseSyllabus;
+    }
+
+    public void setCourseSyllabus(String courseSyllabus) {
+        this.courseSyllabus = courseSyllabus;
+    }
+
+    public String getAgeGrpType() {
+        return ageGrpType;
+    }
+
+    public void setAgeGrpType(String ageGrpType) {
+        this.ageGrpType = ageGrpType;
+    }
+
+    public Boolean getCourseIsActive() {
+        return courseIsActive;
+    }
+
+    public void setCourseIsActive(Boolean courseIsActive) {
+        this.courseIsActive = courseIsActive;
+    }
+
+    public String getCoverPhoto() {
+        return coverPhoto;
+    }
+
+    public void setCoverPhoto(String coverPhoto) {
+        this.coverPhoto = coverPhoto;
+    }
+
+    public Integer getIntroVideoId() {
+        return introVideoId;
+    }
+
+    public void setIntroVideoId(Integer introVideoId) {
+        this.introVideoId = introVideoId;
+    }
+}

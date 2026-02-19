@@ -1,0 +1,15 @@
+{
+    "studentAddress":  "Debug Addr",
+    "course":  {
+                   "courseId":  26
+               },
+    "studentMobile":  "6083417196",
+    "batch":  {
+                  "batchId":  16
+              },
+    "studentGender":  "Male",
+    "studentEmail":  "debug@test.com",
+    "studentId":  0,
+    "paymentDue":  5000,
+    "studentName":  "Debug Student"
+}

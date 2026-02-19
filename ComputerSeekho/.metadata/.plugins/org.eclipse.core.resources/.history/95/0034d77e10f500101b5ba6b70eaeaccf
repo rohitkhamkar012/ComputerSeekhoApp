@@ -1,0 +1,66 @@
+package com.example.entity;\
+import jakarta.persistence.*;
+@Entity
+@Table(name = "image_master")
+public class ImageMaster {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "image_id")
+    private Integer imageId;   // PK Auto generated
+
+    @Column(name = "image_path", length = 255, nullable = false)
+    private String imagePath;
+
+    @ManyToOne
+    @JoinColumn(name = "album_id", nullable = false)
+    private AlbumMaster album;   // Ref → Album Master
+
+    @Column(name = "is_album_cover")
+    private Boolean isAlbumCover = false; // 1 = On, 0 = Off (Default = 0)
+
+    @Column(name = "image_is_active")
+    private Boolean imageIsActive = true; // 1 = On, 0 = Off
+
+    // ===== Getters & Setters =====
+
+    public Integer getImageId() {
+        return imageId;
+    }
+
+    public void setImageId(Integer imageId) {
+        this.imageId = imageId;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
+
+    public AlbumMaster getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(AlbumMaster album) {
+        this.album = album;
+    }
+
+    public Boolean getIsAlbumCover() {
+        return isAlbumCover;
+    }
+
+    public void setIsAlbumCover(Boolean isAlbumCover) {
+        this.isAlbumCover = isAlbumCover;
+    }
+
+    public Boolean getImageIsActive() {
+        return imageIsActive;
+    }
+
+    public void setImageIsActive(Boolean imageIsActive) {
+        this.imageIsActive = imageIsActive;
+    }
+}

@@ -1,0 +1,25 @@
+package com.example.entity;
+
+import jakarta.persistence.*;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "course_master")
+public class CourseMaster {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "course_id")
+    private Long courseId;
+
+    @Column(name = "course_name", length = 100, nullable = false)
+    private String courseName;
+
+    @Column(name = "course_description", length = 500)
+    private String courseDescription;
+
+    @Column(name = "is_active")
+    private Boolean active;
+
+    // getters and setters
+}

@@ -1,0 +1,208 @@
+import jakarta.persistence.*;
+import java.time.LocalDate;
+
+@Entity
+@Table(
+    name = "enquiry",
+    uniqueConstraints = {
+        @UniqueConstraint(columnNames = "enquirer_email_id")
+    }
+)
+public class Enquiry {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "enquiry_id")
+    private Integer enquiryId;   // Auto generated PK
+
+    @Column(name = "enquirer_name", length = 100)
+    private String enquirerName;
+
+    @Column(name = "enquirer_address", length = 300)
+    private String enquirerAddress;
+
+    @Column(name = "enquirer_mobile")
+    private Long enquirerMobile;
+
+    @Column(name = "enquirer_alternate_mobile")
+    private Long enquirerAlternateMobile;
+
+    @Column(name = "enquirer_email_id", length = 100, unique = true)
+    private String enquirerEmailId;
+
+    @Column(name = "enquiry_date")
+    private LocalDate enquiryDate;   // System date
+
+    @Column(name = "enquirer_query", length = 500)
+    private String enquirerQuery;
+
+    @Column(name = "closure_reason_id")
+    private Integer closureReasonId; // FK → Closure Reason Master
+
+    @Column(name = "closure_reason", length = 200)
+    private String closureReason;   // Used only when closureReasonId = OTHER
+
+    @Column(name = "enquiry_processed_flag")
+    private Boolean enquiryProcessedFlag = false; // 1 = On, 0 = Off
+
+    @ManyToOne
+    @JoinColumn(name = "course_id", nullable = false)
+    private CourseMaster course;   // From Course Master
+
+    @ManyToOne
+    @JoinColumn(name = "staff_id", updatable = false)
+    private Staff staff;           // Assigned staff (not editable)
+
+    @Column(name = "student_name", length = 100)
+    private String studentName;
+
+    @Column(name = "inquiry_counter")
+    private Integer inquiryCounter; // No of inquiries
+
+    @Column(name = "followup_date")
+    private LocalDate followUpDate; // enquiry_date or +3 days (editable)
+
+    // ===== Lifecycle Callback =====
+    @PrePersist
+    public void prePersist() {
+        if (enquiryDate == null) {
+            enquiryDate = LocalDate.now();
+        }
+        if (followUpDate == null) {
+            followUpDate = enquiryDate.plusDays(3);
+        }
+        if (inquiryCounter == null) {
+            inquiryCounter = 1;
+        }
+    }
+
+    // ===== Getters & Setters =====
+
+    public Integer getEnquiryId() {
+        return enquiryId;
+    }
+
+    public void setEnquiryId(Integer enquiryId) {
+        this.enquiryId = enquiryId;
+    }
+
+    public String getEnquirerName() {
+        return enquirerName;
+    }
+
+    public void setEnquirerName(String enquirerName) {
+        this.enquirerName = enquirerName;
+    }
+
+    public String getEnquirerAddress() {
+        return enquirerAddress;
+    }
+
+    public void setEnquirerAddress(String enquirerAddress) {
+        this.enquirerAddress = enquirerAddress;
+    }
+
+    public Long getEnquirerMobile() {
+        return enquirerMobile;
+    }
+
+    public void setEnquirerMobile(Long enquirerMobile) {
+        this.enquirerMobile = enquirerMobile;
+    }
+
+    public Long getEnquirerAlternateMobile() {
+        return enquirerAlternateMobile;
+    }
+
+    public void setEnquirerAlternateMobile(Long enquirerAlternateMobile) {
+        this.enquirerAlternateMobile = enquirerAlternateMobile;
+    }
+
+    public String getEnquirerEmailId() {
+        return enquirerEmailId;
+    }
+
+    public void setEnquirerEmailId(String enquirerEmailId) {
+        this.enquirerEmailId = enquirerEmailId;
+    }
+
+    public LocalDate getEnquiryDate() {
+        return enquiryDate;
+    }
+
+    public void setEnquiryDate(LocalDate enquiryDate) {
+        this.enquiryDate = enquiryDate;
+    }
+
+    public String getEnquirerQuery() {
+        return enquirerQuery;
+    }
+
+    public void setEnquirerQuery(String enquirerQuery) {
+        this.enquirerQuery = enquirerQuery;
+    }
+
+    public Integer getClosureReasonId() {
+        return closureReasonId;
+    }
+
+    public void setClosureReasonId(Integer closureReasonId) {
+        this.closureReasonId = closureReasonId;
+    }
+
+    public String getClosureReason() {
+        return closureReason;
+    }
+
+    public void setClosureReason(String closureReason) {
+        this.closureReason = closureReason;
+    }
+
+    public Boolean getEnquiryProcessedFlag() {
+        return enquiryProcessedFlag;
+    }
+
+    public void setEnquiryProcessedFlag(Boolean enquiryProcessedFlag) {
+        this.enquiryProcessedFlag = enquiryProcessedFlag;
+    }
+
+    public CourseMaster getCourse() {
+        return course;
+    }
+
+    public void setCourse(CourseMaster course) {
+        this.course = course;
+    }
+
+    public Staff getStaff() {
+        return staff;
+    }
+
+    public void setStaff(Staff staff) {
+        this.staff = staff;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public Integer getInquiryCounter() {
+        return inquiryCounter;
+    }
+
+    public void setInquiryCounter(Integer inquiryCounter) {
+        this.inquiryCounter = inquiryCounter;
+    }
+
+    public LocalDate getFollowUpDate() {
+        return followUpDate;
+    }
+
+    public void setFollowUpDate(LocalDate followUpDate) {
+        this.followUpDate = followUpDate;
+    }
+}

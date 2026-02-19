@@ -1,0 +1,2 @@
+C is: @{courseDescription=; courseDuration=30; courseFee=5000.0; courseId=26; courseIsActive=True; courseName=Debug Course 1227884781; courseSyllabus=; coverPhoto=}
+C Type: PSCustomObject

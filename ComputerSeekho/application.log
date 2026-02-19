@@ -1,0 +1,1112 @@
+2026-02-10 08:15:15 - Starting ComputerSeekhoApplication v0.0.1-SNAPSHOT using Java 21.0.1 with PID 17528 (C:\Users\NT7\Desktop\jar\comp.jar started by NT7 in C:\Users\NT7\Desktop\jar)
+2026-02-10 08:15:15 - No active profile set, falling back to 1 default profile: "default"
+2026-02-10 08:15:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10 08:15:17 - Finished Spring Data repository scanning in 243 ms. Found 17 JPA repository interfaces.
+2026-02-10 08:15:21 - Tomcat initialized with port 8080 (http)
+2026-02-10 08:15:21 - Starting service [Tomcat]
+2026-02-10 08:15:21 - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-10 08:15:21 - Root WebApplicationContext: initialization completed in 5793 ms
+2026-02-10 08:15:22 - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-10 08:15:22 - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-02-10 08:15:23 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10 08:15:23 - HikariPool-1 - Starting...
+2026-02-10 08:15:24 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25ee3caa
+2026-02-10 08:15:24 - HikariPool-1 - Start completed.
+2026-02-10 08:15:25 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10 08:15:25 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/computerseekhoapp]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: computerseekhoapp/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-10 08:15:28 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10 08:15:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 08:15:28 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-10 08:15:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10 08:15:32 - Global AuthenticationManager configured with AuthenticationProvider bean with name usernamePasswordAuthentication
+2026-02-10 08:15:36 - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-10 08:15:36 - Tomcat started on port 8080 (http) with context path '/'
+2026-02-10 08:15:36 - Started ComputerSeekhoApplication in 22.801 seconds (process running for 24.534)
+2026-02-10 08:16:05 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10 08:16:05 - Initializing Servlet 'dispatcherServlet'
+2026-02-10 08:16:05 - Completed initialization in 4 ms
+2026-02-10 08:16:06 - Entering method: I18nController.getMessages(..)
+2026-02-10 08:16:06 - I18nController: getMessages called with lang=en
+2026-02-10 08:16:06 - Exiting method: I18nController.getMessages(..) | Execution time: 8 ms
+2026-02-10 08:16:06 - Entering method: I18nController.getMessages(..)
+2026-02-10 08:16:06 - I18nController: getMessages called with lang=en
+2026-02-10 08:16:06 - Exiting method: I18nController.getMessages(..) | Execution time: 8 ms
+2026-02-10 08:16:06 - Entering method: NewsController.getLatestNews()
+2026-02-10 08:16:06 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 08:16:06 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 29 ms
+2026-02-10 08:16:06 - Exiting method: NewsController.getLatestNews() | Execution time: 35 ms
+2026-02-10 08:16:06 - Entering method: NewsController.getLatestNews()
+2026-02-10 08:16:06 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 08:16:06 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 11 ms
+2026-02-10 08:16:06 - Exiting method: NewsController.getLatestNews() | Execution time: 14 ms
+2026-02-10 08:16:26 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:16:26 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:16:26 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 73 ms
+2026-02-10 08:16:26 - Exiting method: CourseController.getAllCourses() | Execution time: 89 ms
+2026-02-10 08:16:26 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:16:26 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:16:26 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 13 ms
+2026-02-10 08:16:26 - Exiting method: CourseController.getAllCourses() | Execution time: 19 ms
+2026-02-10 08:16:26 - A cookie header was received [g_state={"i_l":0,"i_ll":1770691580426,"i_e":{"enable_itp_optimization":0},"i_b":"xIUPgdaB2t9PB8WiV5xkURZPgDK2yHip7/6k6MenWwc"}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-02-10 08:16:40 - Entering method: AuthController.googleLogin(..)
+2026-02-10 08:16:41 - Entering method: StaffServiceImpl.getStaffByEmail(..)
+2026-02-10 08:16:41 - Exiting method: StaffServiceImpl.getStaffByEmail(..) | Execution time: 51 ms
+2026-02-10 08:16:41 - Exiting method: AuthController.googleLogin(..) | Execution time: 756 ms
+2026-02-10 08:16:41 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:16:41 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:16:41 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 145 ms
+2026-02-10 08:16:41 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 181 ms
+2026-02-10 08:16:41 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:16:41 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:16:41 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 12 ms
+2026-02-10 08:16:41 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 16 ms
+2026-02-10 08:16:43 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:16:43 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:16:43 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 13 ms
+2026-02-10 08:16:43 - Exiting method: CourseController.getAllCourses() | Execution time: 17 ms
+2026-02-10 08:16:43 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:16:43 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:16:43 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 10 ms
+2026-02-10 08:16:43 - Exiting method: CourseController.getAllCourses() | Execution time: 16 ms
+2026-02-10 08:16:43 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:16:43 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:16:43 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 11 ms
+2026-02-10 08:16:43 - Exiting method: CourseController.getAllCourses() | Execution time: 13 ms
+2026-02-10 08:16:43 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:16:43 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:16:43 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 13 ms
+2026-02-10 08:16:43 - Exiting method: CourseController.getAllCourses() | Execution time: 16 ms
+2026-02-10 08:16:48 - Entering method: CourseController.deleteCourse(..)
+2026-02-10 08:16:48 - Entering method: CourseServiceImpl.deleteCourse(..)
+2026-02-10 08:16:49 - HHH000247: ErrorCode: 1451, SQLState: 23000
+2026-02-10 08:16:49 - Cannot delete or update a parent row: a foreign key constraint fails (`computerseekhoapp`.`student`, CONSTRAINT `FKdfypyqt0stgfc0aij9kcxm99s` FOREIGN KEY (`course_id`) REFERENCES `course` (`course_id`))
+2026-02-10 08:16:52 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:16:52 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:16:52 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 14 ms
+2026-02-10 08:16:52 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 14 ms
+2026-02-10 08:16:52 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:16:52 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:16:52 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 9 ms
+2026-02-10 08:16:52 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 11 ms
+2026-02-10 08:17:16 - Entering method: AuthController.signIn(..)
+2026-02-10 08:17:16 - Entering method: StaffServiceImpl.findByStaffUsername(..)
+2026-02-10 08:17:16 - Exiting method: StaffServiceImpl.findByStaffUsername(..) | Execution time: 8 ms
+2026-02-10 08:17:17 - Exiting method: AuthController.signIn(..) | Execution time: 113 ms
+2026-02-10 08:17:17 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:17:17 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:17:17 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 20 ms
+2026-02-10 08:17:17 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 21 ms
+2026-02-10 08:17:17 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:17:17 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:17:17 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 12 ms
+2026-02-10 08:17:17 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 14 ms
+2026-02-10 08:17:47 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:17:47 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:17:47 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 12 ms
+2026-02-10 08:17:47 - Exiting method: CourseController.getAllCourses() | Execution time: 16 ms
+2026-02-10 08:17:47 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:17:47 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:17:47 - Entering method: BatchController.getAllBatches()
+2026-02-10 08:17:47 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 08:17:47 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 14 ms
+2026-02-10 08:17:47 - Exiting method: CourseController.getAllCourses() | Execution time: 22 ms
+2026-02-10 08:17:47 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 31 ms
+2026-02-10 08:17:47 - Exiting method: BatchController.getAllBatches() | Execution time: 33 ms
+2026-02-10 08:17:47 - Entering method: BatchController.getAllBatches()
+2026-02-10 08:17:47 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 08:17:47 - Entering method: PaymentTypeController.getAllPaymentTypes()
+2026-02-10 08:17:47 - Entering method: PaymentTypeServiceImpl.getAllPayments()
+2026-02-10 08:17:47 - Exiting method: PaymentTypeServiceImpl.getAllPayments() | Execution time: 13 ms
+2026-02-10 08:17:47 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 26 ms
+2026-02-10 08:17:47 - Exiting method: PaymentTypeController.getAllPaymentTypes() | Execution time: 20 ms
+2026-02-10 08:17:47 - Exiting method: BatchController.getAllBatches() | Execution time: 29 ms
+2026-02-10 08:17:47 - Entering method: PaymentTypeController.getAllPaymentTypes()
+2026-02-10 08:17:47 - Entering method: PaymentTypeServiceImpl.getAllPayments()
+2026-02-10 08:17:47 - Exiting method: PaymentTypeServiceImpl.getAllPayments() | Execution time: 10 ms
+2026-02-10 08:17:47 - Exiting method: PaymentTypeController.getAllPaymentTypes() | Execution time: 12 ms
+2026-02-10 08:17:54 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:17:54 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:17:54 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 18 ms
+2026-02-10 08:17:54 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 20 ms
+2026-02-10 08:17:54 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:17:54 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:17:54 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 17 ms
+2026-02-10 08:17:54 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 19 ms
+2026-02-10 08:18:05 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:18:05 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:18:05 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 23 ms
+2026-02-10 08:18:05 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 25 ms
+2026-02-10 08:18:05 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:18:05 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:18:05 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 15 ms
+2026-02-10 08:18:05 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 17 ms
+2026-02-10 08:20:57 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:20:57 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:20:57 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 28 ms
+2026-02-10 08:20:57 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 30 ms
+2026-02-10 08:20:57 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:20:57 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:20:57 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 32 ms
+2026-02-10 08:20:57 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 34 ms
+2026-02-10 08:21:10 - Entering method: NewsController.getLatestNews()
+2026-02-10 08:21:10 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 08:21:10 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 19 ms
+2026-02-10 08:21:10 - Exiting method: NewsController.getLatestNews() | Execution time: 21 ms
+2026-02-10 08:21:10 - Entering method: NewsController.getLatestNews()
+2026-02-10 08:21:10 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 08:21:10 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 7 ms
+2026-02-10 08:21:10 - Exiting method: NewsController.getLatestNews() | Execution time: 7 ms
+2026-02-10 08:21:24 - Entering method: NewsController.getLatestNews()
+2026-02-10 08:21:24 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 08:21:24 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 19 ms
+2026-02-10 08:21:24 - Exiting method: NewsController.getLatestNews() | Execution time: 22 ms
+2026-02-10 08:21:24 - Entering method: NewsController.getLatestNews()
+2026-02-10 08:21:24 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 08:21:24 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 9 ms
+2026-02-10 08:21:24 - Exiting method: NewsController.getLatestNews() | Execution time: 11 ms
+2026-02-10 08:21:52 - Entering method: I18nController.getMessages(..)
+2026-02-10 08:21:52 - I18nController: getMessages called with lang=hi
+2026-02-10 08:21:52 - Exiting method: I18nController.getMessages(..) | Execution time: 11 ms
+2026-02-10 08:21:59 - Entering method: I18nController.getMessages(..)
+2026-02-10 08:21:59 - I18nController: getMessages called with lang=en
+2026-02-10 08:21:59 - Exiting method: I18nController.getMessages(..) | Execution time: 7 ms
+2026-02-10 08:22:02 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:22:02 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:22:02 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 14 ms
+2026-02-10 08:22:02 - Exiting method: CourseController.getAllCourses() | Execution time: 20 ms
+2026-02-10 08:22:02 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:22:02 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:22:02 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 17 ms
+2026-02-10 08:22:02 - Exiting method: CourseController.getAllCourses() | Execution time: 21 ms
+2026-02-10 08:22:18 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:22:18 - Entering method: PlacementController.getAllPlacements()
+2026-02-10 08:22:18 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 08:22:18 - Entering method: BatchController.getAllBatches()
+2026-02-10 08:22:18 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:22:18 - Entering method: PlacementServiceImpl.getAllPlacements()
+2026-02-10 08:22:18 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 08:22:18 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 08:22:18 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 35 ms
+2026-02-10 08:22:18 - Exiting method: CourseController.getAllCourses() | Execution time: 56 ms
+2026-02-10 08:22:18 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 27 ms
+2026-02-10 08:22:18 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 76 ms
+2026-02-10 08:22:18 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:22:18 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:22:18 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 67 ms
+2026-02-10 08:22:18 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 08:22:18 - Exiting method: BatchController.getAllBatches() | Execution time: 101 ms
+2026-02-10 08:22:18 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 08:22:18 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 23 ms
+2026-02-10 08:22:18 - Exiting method: CourseController.getAllCourses() | Execution time: 36 ms
+2026-02-10 08:22:18 - Entering method: BatchController.getAllBatches()
+2026-02-10 08:22:18 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 18 ms
+2026-02-10 08:22:18 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 08:22:18 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 51 ms
+2026-02-10 08:22:18 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 47 ms
+2026-02-10 08:22:18 - Exiting method: BatchController.getAllBatches() | Execution time: 79 ms
+2026-02-10 08:22:19 - Exiting method: PlacementServiceImpl.getAllPlacements() | Execution time: 303 ms
+2026-02-10 08:22:19 - Exiting method: PlacementController.getAllPlacements() | Execution time: 323 ms
+2026-02-10 08:22:19 - Entering method: PlacementController.getAllPlacements()
+2026-02-10 08:22:19 - Entering method: PlacementServiceImpl.getAllPlacements()
+2026-02-10 08:22:19 - Exiting method: PlacementServiceImpl.getAllPlacements() | Execution time: 201 ms
+2026-02-10 08:22:19 - Exiting method: PlacementController.getAllPlacements() | Execution time: 204 ms
+2026-02-10 08:22:53 - Entering method: StaffController.getAllStaff()
+2026-02-10 08:22:53 - Entering method: StaffServiceImpl.getAllStaff()
+2026-02-10 08:22:53 - Exiting method: StaffServiceImpl.getAllStaff() | Execution time: 18 ms
+2026-02-10 08:22:53 - Exiting method: StaffController.getAllStaff() | Execution time: 21 ms
+2026-02-10 08:22:53 - Entering method: StaffController.getAllStaff()
+2026-02-10 08:22:53 - Entering method: StaffServiceImpl.getAllStaff()
+2026-02-10 08:22:53 - Exiting method: StaffServiceImpl.getAllStaff() | Execution time: 14 ms
+2026-02-10 08:22:53 - Exiting method: StaffController.getAllStaff() | Execution time: 16 ms
+2026-02-10 08:24:53 - Entering method: GetInTouchController.addTemporaryEnquiry(..)
+2026-02-10 08:24:53 - Entering method: GetInTouchServiceImpl.save(..)
+2026-02-10 08:24:53 - Exiting method: GetInTouchServiceImpl.save(..) | Execution time: 222 ms
+2026-02-10 08:24:53 - Exiting method: GetInTouchController.addTemporaryEnquiry(..) | Execution time: 227 ms
+2026-02-10 08:25:15 - Entering method: AuthController.signIn(..)
+2026-02-10 08:25:15 - Entering method: StaffServiceImpl.findByStaffUsername(..)
+2026-02-10 08:25:15 - Exiting method: StaffServiceImpl.findByStaffUsername(..) | Execution time: 16 ms
+2026-02-10 08:25:15 - Entering method: StaffServiceImpl.findByStaffUsername(..)
+2026-02-10 08:25:15 - Exiting method: StaffServiceImpl.findByStaffUsername(..) | Execution time: 18 ms
+2026-02-10 08:25:30 - Entering method: AuthController.signIn(..)
+2026-02-10 08:25:30 - Entering method: StaffServiceImpl.findByStaffUsername(..)
+2026-02-10 08:25:30 - Exiting method: StaffServiceImpl.findByStaffUsername(..) | Execution time: 18 ms
+2026-02-10 08:25:30 - Exiting method: AuthController.signIn(..) | Execution time: 278 ms
+2026-02-10 08:25:30 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:25:30 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:25:30 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 20 ms
+2026-02-10 08:25:30 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 22 ms
+2026-02-10 08:25:30 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 08:25:30 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 08:25:30 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 18 ms
+2026-02-10 08:25:30 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 21 ms
+2026-02-10 08:25:52 - Entering method: GetInTouchController.getAllGetInTouch()
+2026-02-10 08:25:52 - Entering method: EnquiryController.getAllEnquiries()
+2026-02-10 08:25:52 - Entering method: GetInTouchServiceImpl.getAll()
+2026-02-10 08:25:52 - Entering method: EnquiryServiceImpl.getAllEnquiries()
+2026-02-10 08:25:52 - Exiting method: GetInTouchServiceImpl.getAll() | Execution time: 34 ms
+2026-02-10 08:25:52 - Exiting method: GetInTouchController.getAllGetInTouch() | Execution time: 43 ms
+2026-02-10 08:25:52 - Entering method: GetInTouchController.getAllGetInTouch()
+2026-02-10 08:25:52 - Entering method: GetInTouchServiceImpl.getAll()
+2026-02-10 08:25:52 - Exiting method: EnquiryServiceImpl.getAllEnquiries() | Execution time: 84 ms
+2026-02-10 08:25:52 - Exiting method: EnquiryController.getAllEnquiries() | Execution time: 100 ms
+2026-02-10 08:25:52 - Exiting method: GetInTouchServiceImpl.getAll() | Execution time: 37 ms
+2026-02-10 08:25:52 - Exiting method: GetInTouchController.getAllGetInTouch() | Execution time: 47 ms
+2026-02-10 08:25:52 - Entering method: EnquiryController.getAllEnquiries()
+2026-02-10 08:25:52 - Entering method: EnquiryServiceImpl.getAllEnquiries()
+2026-02-10 08:25:52 - Exiting method: EnquiryServiceImpl.getAllEnquiries() | Execution time: 42 ms
+2026-02-10 08:25:52 - Exiting method: EnquiryController.getAllEnquiries() | Execution time: 52 ms
+2026-02-10 08:26:10 - Entering method: EnquiryController.createEnquiry(..)
+2026-02-10 08:26:10 - Entering method: StaffServiceImpl.findByStaffUsername(..)
+2026-02-10 08:26:10 - Exiting method: StaffServiceImpl.findByStaffUsername(..) | Execution time: 26 ms
+2026-02-10 08:26:10 - Entering method: EnquiryServiceImpl.createEnquiry(..)
+2026-02-10 08:26:11 - Exiting method: EnquiryServiceImpl.createEnquiry(..) | Execution time: 62 ms
+2026-02-10 08:26:11 - Exiting method: EnquiryController.createEnquiry(..) | Execution time: 102 ms
+2026-02-10 08:26:11 - Entering method: GetInTouchController.deleteGetinTouch(..)
+2026-02-10 08:26:11 - Entering method: GetInTouchServiceImpl.deleteById(..)
+2026-02-10 08:26:11 - Exiting method: GetInTouchServiceImpl.deleteById(..) | Execution time: 44 ms
+2026-02-10 08:26:11 - Exiting method: GetInTouchController.deleteGetinTouch(..) | Execution time: 47 ms
+2026-02-10 08:26:11 - Entering method: GetInTouchController.getAllGetInTouch()
+2026-02-10 08:26:11 - Entering method: EnquiryController.getAllEnquiries()
+2026-02-10 08:26:11 - Entering method: GetInTouchServiceImpl.getAll()
+2026-02-10 08:26:11 - Entering method: EnquiryServiceImpl.getAllEnquiries()
+2026-02-10 08:26:11 - Exiting method: GetInTouchServiceImpl.getAll() | Execution time: 19 ms
+2026-02-10 08:26:11 - Exiting method: GetInTouchController.getAllGetInTouch() | Execution time: 21 ms
+2026-02-10 08:26:11 - Exiting method: EnquiryServiceImpl.getAllEnquiries() | Execution time: 58 ms
+2026-02-10 08:26:11 - Exiting method: EnquiryController.getAllEnquiries() | Execution time: 63 ms
+2026-02-10 08:26:58 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:26:58 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:26:58 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 23 ms
+2026-02-10 08:26:58 - Exiting method: CourseController.getAllCourses() | Execution time: 26 ms
+2026-02-10 08:26:58 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:26:58 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:26:58 - Entering method: BatchController.getAllBatches()
+2026-02-10 08:26:58 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 08:26:58 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 17 ms
+2026-02-10 08:26:58 - Exiting method: CourseController.getAllCourses() | Execution time: 28 ms
+2026-02-10 08:26:58 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 44 ms
+2026-02-10 08:26:58 - Exiting method: BatchController.getAllBatches() | Execution time: 48 ms
+2026-02-10 08:26:58 - Entering method: BatchController.getAllBatches()
+2026-02-10 08:26:58 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 08:26:58 - Entering method: PaymentTypeController.getAllPaymentTypes()
+2026-02-10 08:26:58 - Entering method: PaymentTypeServiceImpl.getAllPayments()
+2026-02-10 08:26:58 - Exiting method: PaymentTypeServiceImpl.getAllPayments() | Execution time: 25 ms
+2026-02-10 08:26:58 - Exiting method: PaymentTypeController.getAllPaymentTypes() | Execution time: 27 ms
+2026-02-10 08:26:58 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 45 ms
+2026-02-10 08:26:58 - Exiting method: BatchController.getAllBatches() | Execution time: 50 ms
+2026-02-10 08:26:58 - Entering method: PaymentTypeController.getAllPaymentTypes()
+2026-02-10 08:26:58 - Entering method: PaymentTypeServiceImpl.getAllPayments()
+2026-02-10 08:26:58 - Exiting method: PaymentTypeServiceImpl.getAllPayments() | Execution time: 10 ms
+2026-02-10 08:26:58 - Exiting method: PaymentTypeController.getAllPaymentTypes() | Execution time: 11 ms
+2026-02-10 08:27:05 - Entering method: EnquiryController.searchEnquiry(..)
+2026-02-10 08:27:05 - Entering method: EnquiryServiceImpl.getEnquiryByMobile(..)
+2026-02-10 08:27:05 - Exiting method: EnquiryServiceImpl.getEnquiryByMobile(..) | Execution time: 49 ms
+2026-02-10 08:27:05 - Exiting method: EnquiryController.searchEnquiry(..) | Execution time: 52 ms
+2026-02-10 08:27:48 - Entering method: ImageUploadController.uploadImage(..)
+2026-02-10 08:27:48 - Exiting method: ImageUploadController.uploadImage(..) | Execution time: 11 ms
+2026-02-10 08:28:17 - Entering method: StudentController.addStudent(..)
+2026-02-10 08:28:17 - Entering method: StudentServiceImpl.addStudent(..)
+2026-02-10 08:28:17 - Entering method: ColsureReasonServiceImpl.addClosureReason(..)
+2026-02-10 08:28:17 - Exiting method: ColsureReasonServiceImpl.addClosureReason(..) | Execution time: 14 ms
+2026-02-10 08:28:17 - Exiting method: StudentServiceImpl.addStudent(..) | Execution time: 147 ms
+2026-02-10 08:28:17 - Entering method: StudentServiceImpl.getStudentById(..)
+2026-02-10 08:28:17 - Exiting method: StudentServiceImpl.getStudentById(..) | Execution time: 20 ms
+2026-02-10 08:28:17 - Entering method: EmailService.sendSimpleEmail(..)
+2026-02-10 08:28:23 - Exiting method: EmailService.sendSimpleEmail(..) | Execution time: 5989 ms
+2026-02-10 08:28:23 - Exiting method: StudentController.addStudent(..) | Execution time: 6180 ms
+2026-02-10 08:28:23 - Entering method: PaymentController.createPayment(..)
+2026-02-10 08:28:23 - Entering method: StudentServiceImpl.getStudentById(..)
+2026-02-10 08:28:24 - Exiting method: StudentServiceImpl.getStudentById(..) | Execution time: 24 ms
+2026-02-10 08:28:24 - Entering method: PaymentServiceImpl.savePayment(..)
+2026-02-10 08:28:24 - Exiting method: PaymentServiceImpl.savePayment(..) | Execution time: 71 ms
+2026-02-10 08:28:24 - Entering method: ReceiptServiceImpl.addReceipt(..)
+2026-02-10 08:28:24 - Exiting method: ReceiptServiceImpl.addReceipt(..) | Execution time: 27 ms
+2026-02-10 08:28:24 - Entering method: EmailService.sendSimpleEmail(..)
+2026-02-10 08:28:29 - Exiting method: EmailService.sendSimpleEmail(..) | Execution time: 5297 ms
+2026-02-10 08:28:29 - Exiting method: PaymentController.createPayment(..) | Execution time: 5443 ms
+2026-02-10 08:28:43 - Entering method: StudentController.getAllStudents()
+2026-02-10 08:28:43 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 08:28:43 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:28:43 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 08:28:43 - Entering method: PlacementController.getAllPlacements()
+2026-02-10 08:28:43 - Entering method: BatchController.getAllBatches()
+2026-02-10 08:28:43 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:28:43 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 08:28:43 - Entering method: PlacementServiceImpl.getAllPlacements()
+2026-02-10 08:28:43 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 08:28:43 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 52 ms
+2026-02-10 08:28:43 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 51 ms
+2026-02-10 08:28:43 - Exiting method: CourseController.getAllCourses() | Execution time: 89 ms
+2026-02-10 08:28:43 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 102 ms
+2026-02-10 08:28:43 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 115 ms
+2026-02-10 08:28:43 - Exiting method: StudentController.getAllStudents() | Execution time: 120 ms
+2026-02-10 08:28:43 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:28:43 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:28:43 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 08:28:43 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 08:28:43 - Entering method: StudentController.getAllStudents()
+2026-02-10 08:28:43 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 127 ms
+2026-02-10 08:28:43 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 25 ms
+2026-02-10 08:28:43 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 08:28:43 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 25 ms
+2026-02-10 08:28:43 - Exiting method: BatchController.getAllBatches() | Execution time: 166 ms
+2026-02-10 08:28:43 - Exiting method: CourseController.getAllCourses() | Execution time: 62 ms
+2026-02-10 08:28:43 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 68 ms
+2026-02-10 08:28:43 - Entering method: BatchController.getAllBatches()
+2026-02-10 08:28:43 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 08:28:43 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 79 ms
+2026-02-10 08:28:43 - Exiting method: StudentController.getAllStudents() | Execution time: 116 ms
+2026-02-10 08:28:43 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 42 ms
+2026-02-10 08:28:43 - Exiting method: BatchController.getAllBatches() | Execution time: 66 ms
+2026-02-10 08:28:43 - Exiting method: PlacementServiceImpl.getAllPlacements() | Execution time: 321 ms
+2026-02-10 08:28:43 - Exiting method: PlacementController.getAllPlacements() | Execution time: 340 ms
+2026-02-10 08:28:43 - Entering method: PlacementController.getAllPlacements()
+2026-02-10 08:28:43 - Entering method: PlacementServiceImpl.getAllPlacements()
+2026-02-10 08:28:43 - Exiting method: PlacementServiceImpl.getAllPlacements() | Execution time: 162 ms
+2026-02-10 08:28:43 - Exiting method: PlacementController.getAllPlacements() | Execution time: 163 ms
+2026-02-10 08:29:20 - Entering method: BatchController.getAllBatches()
+2026-02-10 08:29:20 - Entering method: StudentController.getAllStudents()
+2026-02-10 08:29:20 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 08:29:20 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:29:20 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 08:29:20 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:29:20 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 44 ms
+2026-02-10 08:29:21 - Exiting method: CourseController.getAllCourses() | Execution time: 79 ms
+2026-02-10 08:29:21 - Entering method: CourseController.getAllCourses()
+2026-02-10 08:29:21 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 128 ms
+2026-02-10 08:29:21 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 08:29:21 - Exiting method: BatchController.getAllBatches() | Execution time: 135 ms
+2026-02-10 08:29:21 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 132 ms
+2026-02-10 08:29:21 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 18 ms
+2026-02-10 08:29:21 - Exiting method: StudentController.getAllStudents() | Execution time: 157 ms
+2026-02-10 08:29:21 - Entering method: BatchController.getAllBatches()
+2026-02-10 08:29:21 - Exiting method: CourseController.getAllCourses() | Execution time: 32 ms
+2026-02-10 08:29:21 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 08:29:21 - Entering method: StudentController.getAllStudents()
+2026-02-10 08:29:21 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 08:29:21 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 32 ms
+2026-02-10 08:29:21 - Exiting method: BatchController.getAllBatches() | Execution time: 37 ms
+2026-02-10 08:29:21 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 37 ms
+2026-02-10 08:29:21 - Exiting method: StudentController.getAllStudents() | Execution time: 41 ms
+2026-02-10 08:29:48 - Entering method: PaymentController.getPaymentsByStudentId(..)
+2026-02-10 08:29:48 - Entering method: PaymentServiceImpl.getPaymentsByStudentId(..)
+2026-02-10 08:29:48 - Exiting method: PaymentServiceImpl.getPaymentsByStudentId(..) | Execution time: 61 ms
+2026-02-10 08:29:48 - Exiting method: PaymentController.getPaymentsByStudentId(..) | Execution time: 64 ms
+2026-02-10 08:30:22 - Entering method: PaymentController.getPaymentsByStudentId(..)
+2026-02-10 08:30:22 - Entering method: PaymentServiceImpl.getPaymentsByStudentId(..)
+2026-02-10 08:30:22 - Exiting method: PaymentServiceImpl.getPaymentsByStudentId(..) | Execution time: 40 ms
+2026-02-10 08:30:22 - Exiting method: PaymentController.getPaymentsByStudentId(..) | Execution time: 43 ms
+2026-02-10 08:30:33 - Entering method: PaymentController.getPaymentsByStudentId(..)
+2026-02-10 08:30:33 - Entering method: PaymentServiceImpl.getPaymentsByStudentId(..)
+2026-02-10 08:30:33 - Exiting method: PaymentServiceImpl.getPaymentsByStudentId(..) | Execution time: 35 ms
+2026-02-10 08:30:33 - Exiting method: PaymentController.getPaymentsByStudentId(..) | Execution time: 37 ms
+2026-02-10 08:30:42 - Entering method: PaymentController.getPaymentsByStudentId(..)
+2026-02-10 08:30:42 - Entering method: PaymentServiceImpl.getPaymentsByStudentId(..)
+2026-02-10 08:30:42 - Exiting method: PaymentServiceImpl.getPaymentsByStudentId(..) | Execution time: 47 ms
+2026-02-10 08:30:42 - Exiting method: PaymentController.getPaymentsByStudentId(..) | Execution time: 52 ms
+2026-02-10 08:31:38 - Entering method: I18nController.getMessages(..)
+2026-02-10 08:31:38 - I18nController: getMessages called with lang=en
+2026-02-10 08:31:38 - Exiting method: I18nController.getMessages(..) | Execution time: 3 ms
+2026-02-10 08:31:38 - Entering method: I18nController.getMessages(..)
+2026-02-10 08:31:38 - I18nController: getMessages called with lang=en
+2026-02-10 08:31:38 - Exiting method: I18nController.getMessages(..) | Execution time: 5 ms
+2026-02-10 09:34:45 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50m49s881ms251µs300ns).
+2026-02-10 09:40:48 - Entering method: I18nController.getMessages(..)
+2026-02-10 09:40:48 - I18nController: getMessages called with lang=en
+2026-02-10 09:40:48 - Exiting method: I18nController.getMessages(..) | Execution time: 3 ms
+2026-02-10 09:40:48 - Entering method: I18nController.getMessages(..)
+2026-02-10 09:40:48 - I18nController: getMessages called with lang=en
+2026-02-10 09:40:48 - Exiting method: I18nController.getMessages(..) | Execution time: 2 ms
+2026-02-10 09:40:54 - Entering method: StudentController.getAllStudents()
+2026-02-10 09:40:54 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 09:40:54 - Entering method: CourseController.getAllCourses()
+2026-02-10 09:40:54 - Entering method: BatchController.getAllBatches()
+2026-02-10 09:40:54 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 09:40:54 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 09:40:54 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 33 ms
+2026-02-10 09:40:54 - Exiting method: CourseController.getAllCourses() | Execution time: 57 ms
+2026-02-10 09:40:54 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 56 ms
+2026-02-10 09:40:54 - Exiting method: BatchController.getAllBatches() | Execution time: 83 ms
+2026-02-10 09:40:54 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 84 ms
+2026-02-10 09:40:54 - Entering method: CourseController.getAllCourses()
+2026-02-10 09:40:54 - Entering method: BatchController.getAllBatches()
+2026-02-10 09:40:54 - Exiting method: StudentController.getAllStudents() | Execution time: 99 ms
+2026-02-10 09:40:54 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 09:40:54 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 09:40:54 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 15 ms
+2026-02-10 09:40:54 - Entering method: StudentController.getAllStudents()
+2026-02-10 09:40:54 - Exiting method: CourseController.getAllCourses() | Execution time: 25 ms
+2026-02-10 09:40:54 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 09:40:54 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 39 ms
+2026-02-10 09:40:54 - Exiting method: BatchController.getAllBatches() | Execution time: 44 ms
+2026-02-10 09:40:54 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 39 ms
+2026-02-10 09:40:54 - Exiting method: StudentController.getAllStudents() | Execution time: 52 ms
+2026-02-10 09:40:57 - Entering method: I18nController.getMessages(..)
+2026-02-10 09:40:57 - I18nController: getMessages called with lang=en
+2026-02-10 09:40:57 - Exiting method: I18nController.getMessages(..) | Execution time: 3 ms
+2026-02-10 09:40:57 - Entering method: I18nController.getMessages(..)
+2026-02-10 09:40:57 - I18nController: getMessages called with lang=en
+2026-02-10 09:40:57 - Exiting method: I18nController.getMessages(..) | Execution time: 3 ms
+2026-02-10 09:40:59 - Entering method: CourseController.getAllCourses()
+2026-02-10 09:40:59 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 09:40:59 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 13 ms
+2026-02-10 09:40:59 - Exiting method: CourseController.getAllCourses() | Execution time: 16 ms
+2026-02-10 09:40:59 - Entering method: CourseController.getAllCourses()
+2026-02-10 09:40:59 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 09:40:59 - Entering method: BatchController.getAllBatches()
+2026-02-10 09:40:59 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 09:40:59 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 13 ms
+2026-02-10 09:40:59 - Exiting method: CourseController.getAllCourses() | Execution time: 17 ms
+2026-02-10 09:40:59 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 31 ms
+2026-02-10 09:40:59 - Exiting method: BatchController.getAllBatches() | Execution time: 32 ms
+2026-02-10 09:40:59 - Entering method: BatchController.getAllBatches()
+2026-02-10 09:40:59 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 09:40:59 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 21 ms
+2026-02-10 09:40:59 - Exiting method: BatchController.getAllBatches() | Execution time: 26 ms
+2026-02-10 09:41:03 - Entering method: NewsController.getLatestNews()
+2026-02-10 09:41:03 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 09:41:03 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 10 ms
+2026-02-10 09:41:03 - Exiting method: NewsController.getLatestNews() | Execution time: 11 ms
+2026-02-10 09:41:03 - Entering method: NewsController.getLatestNews()
+2026-02-10 09:41:03 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 09:41:03 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 7 ms
+2026-02-10 09:41:03 - Exiting method: NewsController.getLatestNews() | Execution time: 11 ms
+2026-02-10 09:41:03 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m18s558ms58µs899ns).
+2026-02-10 09:54:11 - Entering method: I18nController.getMessages(..)
+2026-02-10 09:54:11 - I18nController: getMessages called with lang=en
+2026-02-10 09:54:11 - Exiting method: I18nController.getMessages(..) | Execution time: 25 ms
+2026-02-10 09:54:11 - Entering method: I18nController.getMessages(..)
+2026-02-10 09:54:11 - I18nController: getMessages called with lang=en
+2026-02-10 09:54:11 - Exiting method: I18nController.getMessages(..) | Execution time: 5 ms
+2026-02-10 09:54:11 - Entering method: NewsController.getLatestNews()
+2026-02-10 09:54:11 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 09:54:11 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 9 ms
+2026-02-10 09:54:11 - Exiting method: NewsController.getLatestNews() | Execution time: 17 ms
+2026-02-10 09:54:11 - Entering method: NewsController.getLatestNews()
+2026-02-10 09:54:11 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 09:54:11 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 4 ms
+2026-02-10 09:54:11 - Exiting method: NewsController.getLatestNews() | Execution time: 5 ms
+2026-02-10 09:54:28 - Entering method: I18nController.getMessages(..)
+2026-02-10 09:54:28 - I18nController: getMessages called with lang=hi
+2026-02-10 09:54:28 - Exiting method: I18nController.getMessages(..) | Execution time: 8 ms
+2026-02-10 09:54:29 - Entering method: I18nController.getMessages(..)
+2026-02-10 09:54:29 - I18nController: getMessages called with lang=en
+2026-02-10 09:54:29 - Exiting method: I18nController.getMessages(..) | Execution time: 4 ms
+2026-02-10 09:54:30 - Entering method: I18nController.getMessages(..)
+2026-02-10 09:54:30 - I18nController: getMessages called with lang=hi
+2026-02-10 09:54:30 - Exiting method: I18nController.getMessages(..) | Execution time: 11 ms
+2026-02-10 09:54:31 - Entering method: I18nController.getMessages(..)
+2026-02-10 09:54:31 - I18nController: getMessages called with lang=en
+2026-02-10 09:54:31 - Exiting method: I18nController.getMessages(..) | Execution time: 5 ms
+2026-02-10 09:54:38 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m5s35ms844µs501ns).
+2026-02-10 09:57:05 - Entering method: NewsController.getLatestNews()
+2026-02-10 09:57:05 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 09:57:05 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 21 ms
+2026-02-10 09:57:05 - Exiting method: NewsController.getLatestNews() | Execution time: 24 ms
+2026-02-10 09:57:05 - Entering method: NewsController.getLatestNews()
+2026-02-10 09:57:05 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 09:57:05 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 10 ms
+2026-02-10 09:57:05 - Exiting method: NewsController.getLatestNews() | Execution time: 14 ms
+2026-02-10 10:03:57 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:03:57 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:03:57 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 46 ms
+2026-02-10 10:03:57 - Exiting method: CourseController.getAllCourses() | Execution time: 52 ms
+2026-02-10 10:03:57 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:03:57 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:03:57 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 25 ms
+2026-02-10 10:03:57 - Exiting method: CourseController.getAllCourses() | Execution time: 37 ms
+2026-02-10 10:04:09 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 10:04:09 - Entering method: PlacementController.getAllPlacements()
+2026-02-10 10:04:09 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 10:04:09 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:04:09 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:04:09 - Entering method: PlacementServiceImpl.getAllPlacements()
+2026-02-10 10:04:09 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:04:09 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:04:09 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 42 ms
+2026-02-10 10:04:09 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 49 ms
+2026-02-10 10:04:09 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 40 ms
+2026-02-10 10:04:09 - Exiting method: CourseController.getAllCourses() | Execution time: 75 ms
+2026-02-10 10:04:09 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 10:04:09 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 10:04:09 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:04:09 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:04:09 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 40 ms
+2026-02-10 10:04:09 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 140 ms
+2026-02-10 10:04:09 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 78 ms
+2026-02-10 10:04:09 - Exiting method: BatchController.getAllBatches() | Execution time: 154 ms
+2026-02-10 10:04:09 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 26 ms
+2026-02-10 10:04:09 - Exiting method: CourseController.getAllCourses() | Execution time: 51 ms
+2026-02-10 10:04:09 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:04:09 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:04:09 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 32 ms
+2026-02-10 10:04:09 - Exiting method: BatchController.getAllBatches() | Execution time: 47 ms
+2026-02-10 10:04:09 - Exiting method: PlacementServiceImpl.getAllPlacements() | Execution time: 243 ms
+2026-02-10 10:04:09 - Exiting method: PlacementController.getAllPlacements() | Execution time: 254 ms
+2026-02-10 10:04:09 - Entering method: PlacementController.getAllPlacements()
+2026-02-10 10:04:09 - Entering method: PlacementServiceImpl.getAllPlacements()
+2026-02-10 10:04:09 - Exiting method: PlacementServiceImpl.getAllPlacements() | Execution time: 152 ms
+2026-02-10 10:04:09 - Exiting method: PlacementController.getAllPlacements() | Execution time: 154 ms
+2026-02-10 10:05:32 - Entering method: StaffController.getAllStaff()
+2026-02-10 10:05:32 - Entering method: StaffServiceImpl.getAllStaff()
+2026-02-10 10:05:32 - Exiting method: StaffServiceImpl.getAllStaff() | Execution time: 28 ms
+2026-02-10 10:05:32 - Exiting method: StaffController.getAllStaff() | Execution time: 33 ms
+2026-02-10 10:05:32 - Entering method: StaffController.getAllStaff()
+2026-02-10 10:05:32 - Entering method: StaffServiceImpl.getAllStaff()
+2026-02-10 10:05:32 - Exiting method: StaffServiceImpl.getAllStaff() | Execution time: 23 ms
+2026-02-10 10:05:32 - Exiting method: StaffController.getAllStaff() | Execution time: 27 ms
+2026-02-10 10:06:21 - Entering method: NewsController.getLatestNews()
+2026-02-10 10:06:21 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 10:06:21 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 20 ms
+2026-02-10 10:06:21 - Exiting method: NewsController.getLatestNews() | Execution time: 23 ms
+2026-02-10 10:06:21 - Entering method: NewsController.getLatestNews()
+2026-02-10 10:06:21 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 10:06:21 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 10 ms
+2026-02-10 10:06:21 - Exiting method: NewsController.getLatestNews() | Execution time: 13 ms
+2026-02-10 10:06:23 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:06:23 - I18nController: getMessages called with lang=hi
+2026-02-10 10:06:23 - Exiting method: I18nController.getMessages(..) | Execution time: 8 ms
+2026-02-10 10:06:33 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:06:33 - I18nController: getMessages called with lang=en
+2026-02-10 10:06:33 - Exiting method: I18nController.getMessages(..) | Execution time: 11 ms
+2026-02-10 10:07:19 - Entering method: GetInTouchController.addTemporaryEnquiry(..)
+2026-02-10 10:07:19 - Entering method: GetInTouchServiceImpl.save(..)
+2026-02-10 10:07:20 - Exiting method: GetInTouchServiceImpl.save(..) | Execution time: 82 ms
+2026-02-10 10:07:20 - Exiting method: GetInTouchController.addTemporaryEnquiry(..) | Execution time: 98 ms
+2026-02-10 10:08:07 - Entering method: NewsController.getLatestNews()
+2026-02-10 10:08:07 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 10:08:07 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 15 ms
+2026-02-10 10:08:07 - Exiting method: NewsController.getLatestNews() | Execution time: 17 ms
+2026-02-10 10:08:07 - Entering method: NewsController.getLatestNews()
+2026-02-10 10:08:07 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 10:08:07 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 11 ms
+2026-02-10 10:08:07 - Exiting method: NewsController.getLatestNews() | Execution time: 14 ms
+2026-02-10 10:08:30 - Entering method: AuthController.signIn(..)
+2026-02-10 10:08:30 - Entering method: StaffServiceImpl.findByStaffUsername(..)
+2026-02-10 10:08:30 - Exiting method: StaffServiceImpl.findByStaffUsername(..) | Execution time: 13 ms
+2026-02-10 10:08:30 - Exiting method: AuthController.signIn(..) | Execution time: 322 ms
+2026-02-10 10:08:30 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 10:08:30 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 10:08:30 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 33 ms
+2026-02-10 10:08:30 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 36 ms
+2026-02-10 10:08:30 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 10:08:30 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 10:08:30 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 20 ms
+2026-02-10 10:08:30 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 22 ms
+2026-02-10 10:08:45 - Entering method: EnquiryController.getAllEnquiries()
+2026-02-10 10:08:45 - Entering method: GetInTouchController.getAllGetInTouch()
+2026-02-10 10:08:45 - Entering method: EnquiryServiceImpl.getAllEnquiries()
+2026-02-10 10:08:45 - Entering method: GetInTouchServiceImpl.getAll()
+2026-02-10 10:08:45 - Exiting method: GetInTouchServiceImpl.getAll() | Execution time: 22 ms
+2026-02-10 10:08:45 - Exiting method: GetInTouchController.getAllGetInTouch() | Execution time: 39 ms
+2026-02-10 10:08:45 - Exiting method: EnquiryServiceImpl.getAllEnquiries() | Execution time: 63 ms
+2026-02-10 10:08:45 - Entering method: GetInTouchController.getAllGetInTouch()
+2026-02-10 10:08:45 - Exiting method: EnquiryController.getAllEnquiries() | Execution time: 66 ms
+2026-02-10 10:08:45 - Entering method: GetInTouchServiceImpl.getAll()
+2026-02-10 10:08:45 - Exiting method: GetInTouchServiceImpl.getAll() | Execution time: 28 ms
+2026-02-10 10:08:45 - Exiting method: GetInTouchController.getAllGetInTouch() | Execution time: 34 ms
+2026-02-10 10:08:45 - Entering method: EnquiryController.getAllEnquiries()
+2026-02-10 10:08:45 - Entering method: EnquiryServiceImpl.getAllEnquiries()
+2026-02-10 10:08:45 - Exiting method: EnquiryServiceImpl.getAllEnquiries() | Execution time: 54 ms
+2026-02-10 10:08:45 - Exiting method: EnquiryController.getAllEnquiries() | Execution time: 59 ms
+2026-02-10 10:09:05 - Entering method: EnquiryController.createEnquiry(..)
+2026-02-10 10:09:05 - Entering method: StaffServiceImpl.findByStaffUsername(..)
+2026-02-10 10:09:05 - Exiting method: StaffServiceImpl.findByStaffUsername(..) | Execution time: 20 ms
+2026-02-10 10:09:05 - Entering method: EnquiryServiceImpl.createEnquiry(..)
+2026-02-10 10:09:05 - Exiting method: EnquiryServiceImpl.createEnquiry(..) | Execution time: 31 ms
+2026-02-10 10:09:05 - Exiting method: EnquiryController.createEnquiry(..) | Execution time: 54 ms
+2026-02-10 10:09:05 - Entering method: GetInTouchController.deleteGetinTouch(..)
+2026-02-10 10:09:05 - Entering method: GetInTouchServiceImpl.deleteById(..)
+2026-02-10 10:09:05 - Exiting method: GetInTouchServiceImpl.deleteById(..) | Execution time: 25 ms
+2026-02-10 10:09:05 - Exiting method: GetInTouchController.deleteGetinTouch(..) | Execution time: 27 ms
+2026-02-10 10:09:05 - Entering method: GetInTouchController.getAllGetInTouch()
+2026-02-10 10:09:05 - Entering method: EnquiryController.getAllEnquiries()
+2026-02-10 10:09:05 - Entering method: GetInTouchServiceImpl.getAll()
+2026-02-10 10:09:05 - Entering method: EnquiryServiceImpl.getAllEnquiries()
+2026-02-10 10:09:05 - Exiting method: GetInTouchServiceImpl.getAll() | Execution time: 27 ms
+2026-02-10 10:09:05 - Exiting method: GetInTouchController.getAllGetInTouch() | Execution time: 34 ms
+2026-02-10 10:09:05 - Exiting method: EnquiryServiceImpl.getAllEnquiries() | Execution time: 45 ms
+2026-02-10 10:09:05 - Exiting method: EnquiryController.getAllEnquiries() | Execution time: 54 ms
+2026-02-10 10:09:12 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:09:12 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:09:12 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 12 ms
+2026-02-10 10:09:12 - Exiting method: CourseController.getAllCourses() | Execution time: 16 ms
+2026-02-10 10:09:12 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:09:12 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:09:12 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:09:12 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:09:12 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 8 ms
+2026-02-10 10:09:12 - Exiting method: CourseController.getAllCourses() | Execution time: 16 ms
+2026-02-10 10:09:12 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 26 ms
+2026-02-10 10:09:12 - Exiting method: BatchController.getAllBatches() | Execution time: 28 ms
+2026-02-10 10:09:12 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:09:12 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:09:12 - Entering method: PaymentTypeController.getAllPaymentTypes()
+2026-02-10 10:09:12 - Entering method: PaymentTypeServiceImpl.getAllPayments()
+2026-02-10 10:09:12 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 25 ms
+2026-02-10 10:09:12 - Exiting method: PaymentTypeServiceImpl.getAllPayments() | Execution time: 14 ms
+2026-02-10 10:09:12 - Exiting method: BatchController.getAllBatches() | Execution time: 30 ms
+2026-02-10 10:09:12 - Exiting method: PaymentTypeController.getAllPaymentTypes() | Execution time: 20 ms
+2026-02-10 10:09:12 - Entering method: PaymentTypeController.getAllPaymentTypes()
+2026-02-10 10:09:12 - Entering method: PaymentTypeServiceImpl.getAllPayments()
+2026-02-10 10:09:12 - Exiting method: PaymentTypeServiceImpl.getAllPayments() | Execution time: 11 ms
+2026-02-10 10:09:12 - Exiting method: PaymentTypeController.getAllPaymentTypes() | Execution time: 12 ms
+2026-02-10 10:09:20 - Entering method: EnquiryController.getAllEnquiries()
+2026-02-10 10:09:20 - Entering method: EnquiryServiceImpl.getAllEnquiries()
+2026-02-10 10:09:20 - Entering method: GetInTouchController.getAllGetInTouch()
+2026-02-10 10:09:20 - Entering method: GetInTouchServiceImpl.getAll()
+2026-02-10 10:09:20 - Exiting method: GetInTouchServiceImpl.getAll() | Execution time: 26 ms
+2026-02-10 10:09:20 - Exiting method: GetInTouchController.getAllGetInTouch() | Execution time: 41 ms
+2026-02-10 10:09:20 - Entering method: GetInTouchController.getAllGetInTouch()
+2026-02-10 10:09:20 - Entering method: GetInTouchServiceImpl.getAll()
+2026-02-10 10:09:20 - Exiting method: EnquiryServiceImpl.getAllEnquiries() | Execution time: 86 ms
+2026-02-10 10:09:20 - Exiting method: EnquiryController.getAllEnquiries() | Execution time: 88 ms
+2026-02-10 10:09:20 - Exiting method: GetInTouchServiceImpl.getAll() | Execution time: 22 ms
+2026-02-10 10:09:20 - Exiting method: GetInTouchController.getAllGetInTouch() | Execution time: 31 ms
+2026-02-10 10:09:20 - Entering method: EnquiryController.getAllEnquiries()
+2026-02-10 10:09:20 - Entering method: EnquiryServiceImpl.getAllEnquiries()
+2026-02-10 10:09:21 - Exiting method: EnquiryServiceImpl.getAllEnquiries() | Execution time: 42 ms
+2026-02-10 10:09:21 - Exiting method: EnquiryController.getAllEnquiries() | Execution time: 45 ms
+2026-02-10 10:09:28 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:09:28 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:09:28 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 18 ms
+2026-02-10 10:09:28 - Exiting method: CourseController.getAllCourses() | Execution time: 27 ms
+2026-02-10 10:09:28 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:09:28 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:09:28 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:09:28 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:09:28 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 16 ms
+2026-02-10 10:09:28 - Exiting method: CourseController.getAllCourses() | Execution time: 22 ms
+2026-02-10 10:09:28 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 34 ms
+2026-02-10 10:09:28 - Exiting method: BatchController.getAllBatches() | Execution time: 42 ms
+2026-02-10 10:09:28 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:09:28 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:09:28 - Entering method: PaymentTypeController.getAllPaymentTypes()
+2026-02-10 10:09:28 - Entering method: PaymentTypeServiceImpl.getAllPayments()
+2026-02-10 10:09:28 - Exiting method: PaymentTypeServiceImpl.getAllPayments() | Execution time: 12 ms
+2026-02-10 10:09:28 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 21 ms
+2026-02-10 10:09:28 - Exiting method: PaymentTypeController.getAllPaymentTypes() | Execution time: 19 ms
+2026-02-10 10:09:28 - Exiting method: BatchController.getAllBatches() | Execution time: 26 ms
+2026-02-10 10:09:28 - Entering method: PaymentTypeController.getAllPaymentTypes()
+2026-02-10 10:09:28 - Entering method: PaymentTypeServiceImpl.getAllPayments()
+2026-02-10 10:09:28 - Exiting method: PaymentTypeServiceImpl.getAllPayments() | Execution time: 11 ms
+2026-02-10 10:09:28 - Exiting method: PaymentTypeController.getAllPaymentTypes() | Execution time: 13 ms
+2026-02-10 10:09:32 - Entering method: EnquiryController.searchEnquiry(..)
+2026-02-10 10:09:32 - Entering method: EnquiryServiceImpl.getEnquiryByMobile(..)
+2026-02-10 10:09:32 - Exiting method: EnquiryServiceImpl.getEnquiryByMobile(..) | Execution time: 17 ms
+2026-02-10 10:09:32 - Exiting method: EnquiryController.searchEnquiry(..) | Execution time: 18 ms
+2026-02-10 10:09:52 - Entering method: ImageUploadController.uploadImage(..)
+2026-02-10 10:09:52 - Exiting method: ImageUploadController.uploadImage(..) | Execution time: 7 ms
+2026-02-10 10:10:18 - Entering method: StudentController.addStudent(..)
+2026-02-10 10:10:18 - Entering method: StudentServiceImpl.addStudent(..)
+2026-02-10 10:10:18 - Entering method: ColsureReasonServiceImpl.addClosureReason(..)
+2026-02-10 10:10:18 - Exiting method: ColsureReasonServiceImpl.addClosureReason(..) | Execution time: 23 ms
+2026-02-10 10:10:18 - Exiting method: StudentServiceImpl.addStudent(..) | Execution time: 95 ms
+2026-02-10 10:10:18 - Entering method: StudentServiceImpl.getStudentById(..)
+2026-02-10 10:10:18 - Exiting method: StudentServiceImpl.getStudentById(..) | Execution time: 18 ms
+2026-02-10 10:10:18 - Entering method: EmailService.sendSimpleEmail(..)
+2026-02-10 10:10:23 - Exiting method: EmailService.sendSimpleEmail(..) | Execution time: 4738 ms
+2026-02-10 10:10:23 - Exiting method: StudentController.addStudent(..) | Execution time: 4873 ms
+2026-02-10 10:10:23 - Entering method: PaymentController.createPayment(..)
+2026-02-10 10:10:23 - Entering method: StudentServiceImpl.getStudentById(..)
+2026-02-10 10:10:23 - Exiting method: StudentServiceImpl.getStudentById(..) | Execution time: 23 ms
+2026-02-10 10:10:23 - Entering method: PaymentServiceImpl.savePayment(..)
+2026-02-10 10:10:23 - Exiting method: PaymentServiceImpl.savePayment(..) | Execution time: 66 ms
+2026-02-10 10:10:23 - Entering method: ReceiptServiceImpl.addReceipt(..)
+2026-02-10 10:10:23 - Exiting method: ReceiptServiceImpl.addReceipt(..) | Execution time: 32 ms
+2026-02-10 10:10:23 - Entering method: EmailService.sendSimpleEmail(..)
+2026-02-10 10:10:27 - Exiting method: EmailService.sendSimpleEmail(..) | Execution time: 4409 ms
+2026-02-10 10:10:27 - Exiting method: PaymentController.createPayment(..) | Execution time: 4541 ms
+2026-02-10 10:10:35 - Entering method: StudentController.getAllStudents()
+2026-02-10 10:10:35 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 10:10:35 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:10:35 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:10:35 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:10:35 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:10:35 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 13 ms
+2026-02-10 10:10:35 - Exiting method: CourseController.getAllCourses() | Execution time: 28 ms
+2026-02-10 10:10:35 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 48 ms
+2026-02-10 10:10:35 - Exiting method: StudentController.getAllStudents() | Execution time: 51 ms
+2026-02-10 10:10:35 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:10:35 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:10:35 - Entering method: StudentController.getAllStudents()
+2026-02-10 10:10:35 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 10:10:35 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 59 ms
+2026-02-10 10:10:35 - Exiting method: BatchController.getAllBatches() | Execution time: 65 ms
+2026-02-10 10:10:35 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 15 ms
+2026-02-10 10:10:35 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:10:35 - Exiting method: CourseController.getAllCourses() | Execution time: 35 ms
+2026-02-10 10:10:35 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:10:35 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 39 ms
+2026-02-10 10:10:35 - Exiting method: StudentController.getAllStudents() | Execution time: 45 ms
+2026-02-10 10:10:35 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 32 ms
+2026-02-10 10:10:35 - Exiting method: BatchController.getAllBatches() | Execution time: 37 ms
+2026-02-10 10:10:57 - Entering method: PaymentController.getPaymentsByStudentId(..)
+2026-02-10 10:10:57 - Entering method: PaymentServiceImpl.getPaymentsByStudentId(..)
+2026-02-10 10:10:57 - Exiting method: PaymentServiceImpl.getPaymentsByStudentId(..) | Execution time: 25 ms
+2026-02-10 10:10:57 - Exiting method: PaymentController.getPaymentsByStudentId(..) | Execution time: 31 ms
+2026-02-10 10:11:15 - Entering method: PaymentController.createPayment(..)
+2026-02-10 10:11:15 - Entering method: StudentServiceImpl.getStudentById(..)
+2026-02-10 10:11:15 - Exiting method: StudentServiceImpl.getStudentById(..) | Execution time: 24 ms
+2026-02-10 10:11:15 - Entering method: PaymentServiceImpl.savePayment(..)
+2026-02-10 10:11:15 - Exiting method: PaymentServiceImpl.savePayment(..) | Execution time: 55 ms
+2026-02-10 10:11:15 - Entering method: ReceiptServiceImpl.addReceipt(..)
+2026-02-10 10:11:15 - Exiting method: ReceiptServiceImpl.addReceipt(..) | Execution time: 24 ms
+2026-02-10 10:11:15 - Entering method: EmailService.sendSimpleEmail(..)
+2026-02-10 10:11:17 - Entering method: PaymentController.createPayment(..)
+2026-02-10 10:11:17 - Entering method: StudentServiceImpl.getStudentById(..)
+2026-02-10 10:11:17 - Exiting method: StudentServiceImpl.getStudentById(..) | Execution time: 32 ms
+2026-02-10 10:11:17 - Exiting method: PaymentController.createPayment(..) | Execution time: 34 ms
+2026-02-10 10:11:20 - Exiting method: EmailService.sendSimpleEmail(..) | Execution time: 4831 ms
+2026-02-10 10:11:20 - Exiting method: PaymentController.createPayment(..) | Execution time: 4945 ms
+2026-02-10 10:11:20 - Entering method: StudentController.getAllStudents()
+2026-02-10 10:11:20 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 10:11:20 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 54 ms
+2026-02-10 10:11:20 - Exiting method: StudentController.getAllStudents() | Execution time: 56 ms
+2026-02-10 10:11:27 - Entering method: PaymentController.getPaymentsByStudentId(..)
+2026-02-10 10:11:27 - Entering method: PaymentServiceImpl.getPaymentsByStudentId(..)
+2026-02-10 10:11:27 - Exiting method: PaymentServiceImpl.getPaymentsByStudentId(..) | Execution time: 41 ms
+2026-02-10 10:11:27 - Exiting method: PaymentController.getPaymentsByStudentId(..) | Execution time: 44 ms
+2026-02-10 10:11:39 - Entering method: StudentController.getAllStudents()
+2026-02-10 10:11:39 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 10:11:39 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 10:11:39 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 10:11:39 - Entering method: PlacementController.getAllPlacements()
+2026-02-10 10:11:39 - Entering method: PlacementServiceImpl.getAllPlacements()
+2026-02-10 10:11:39 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:11:39 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:11:39 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:11:39 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 24 ms
+2026-02-10 10:11:39 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:11:39 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 52 ms
+2026-02-10 10:11:39 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 33 ms
+2026-02-10 10:11:39 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 64 ms
+2026-02-10 10:11:39 - Exiting method: CourseController.getAllCourses() | Execution time: 62 ms
+2026-02-10 10:11:39 - Exiting method: StudentController.getAllStudents() | Execution time: 79 ms
+2026-02-10 10:11:39 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 10:11:39 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 10:11:39 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:11:39 - Entering method: StudentController.getAllStudents()
+2026-02-10 10:11:39 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:11:39 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 73 ms
+2026-02-10 10:11:39 - Entering method: StudentServiceImpl.getAllStudentsEntity()
+2026-02-10 10:11:39 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 26 ms
+2026-02-10 10:11:39 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 12 ms
+2026-02-10 10:11:39 - Exiting method: BatchController.getAllBatches() | Execution time: 121 ms
+2026-02-10 10:11:39 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 50 ms
+2026-02-10 10:11:39 - Exiting method: CourseController.getAllCourses() | Execution time: 51 ms
+2026-02-10 10:11:39 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:11:39 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:11:39 - Exiting method: StudentServiceImpl.getAllStudentsEntity() | Execution time: 60 ms
+2026-02-10 10:11:39 - Exiting method: StudentController.getAllStudents() | Execution time: 81 ms
+2026-02-10 10:11:39 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 27 ms
+2026-02-10 10:11:39 - Exiting method: BatchController.getAllBatches() | Execution time: 36 ms
+2026-02-10 10:11:39 - Exiting method: PlacementServiceImpl.getAllPlacements() | Execution time: 200 ms
+2026-02-10 10:11:39 - Exiting method: PlacementController.getAllPlacements() | Execution time: 212 ms
+2026-02-10 10:11:39 - Entering method: PlacementController.getAllPlacements()
+2026-02-10 10:11:39 - Entering method: PlacementServiceImpl.getAllPlacements()
+2026-02-10 10:11:39 - Exiting method: PlacementServiceImpl.getAllPlacements() | Execution time: 81 ms
+2026-02-10 10:11:39 - Exiting method: PlacementController.getAllPlacements() | Execution time: 83 ms
+2026-02-10 10:12:12 - Entering method: PlacementController.addPlacement(..)
+2026-02-10 10:12:12 - Entering method: PlacementServiceImpl.createPlacement(..)
+2026-02-10 10:12:13 - Exiting method: PlacementServiceImpl.createPlacement(..) | Execution time: 71 ms
+2026-02-10 10:12:13 - Exiting method: PlacementController.addPlacement(..) | Execution time: 74 ms
+2026-02-10 10:12:16 - Entering method: PlacementController.getAllPlacements()
+2026-02-10 10:12:16 - Entering method: PlacementServiceImpl.getAllPlacements()
+2026-02-10 10:12:16 - Exiting method: PlacementServiceImpl.getAllPlacements() | Execution time: 318 ms
+2026-02-10 10:12:16 - Exiting method: PlacementController.getAllPlacements() | Execution time: 328 ms
+2026-02-10 10:12:24 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:12:24 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:12:24 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 12 ms
+2026-02-10 10:12:24 - Exiting method: CourseController.getAllCourses() | Execution time: 14 ms
+2026-02-10 10:12:24 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:12:24 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:12:24 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 8 ms
+2026-02-10 10:12:24 - Exiting method: CourseController.getAllCourses() | Execution time: 11 ms
+2026-02-10 10:12:24 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:12:24 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:12:24 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 12 ms
+2026-02-10 10:12:24 - Exiting method: CourseController.getAllCourses() | Execution time: 14 ms
+2026-02-10 10:12:24 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:12:24 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:12:24 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 9 ms
+2026-02-10 10:12:24 - Exiting method: CourseController.getAllCourses() | Execution time: 12 ms
+2026-02-10 10:12:31 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 10:12:31 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 10:12:31 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 27 ms
+2026-02-10 10:12:31 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 30 ms
+2026-02-10 10:12:33 - Entering method: NewsController.getAllImages()
+2026-02-10 10:12:33 - Entering method: NewsServiceImpl.getAllImages()
+2026-02-10 10:12:33 - Exiting method: NewsServiceImpl.getAllImages() | Execution time: 28 ms
+2026-02-10 10:12:33 - Exiting method: NewsController.getAllImages() | Execution time: 29 ms
+2026-02-10 10:12:39 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:12:39 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:12:39 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 11 ms
+2026-02-10 10:12:39 - Exiting method: CourseController.getAllCourses() | Execution time: 15 ms
+2026-02-10 10:13:22 - Entering method: ImageUploadController.uploadImage(..)
+2026-02-10 10:13:22 - Exiting method: ImageUploadController.uploadImage(..) | Execution time: 8 ms
+2026-02-10 10:13:30 - Entering method: CourseController.addCourse(..)
+2026-02-10 10:13:30 - Entering method: CourseServiceImpl.addCourse(..)
+2026-02-10 10:13:30 - Exiting method: CourseServiceImpl.addCourse(..) | Execution time: 38 ms
+2026-02-10 10:13:30 - Exiting method: CourseController.addCourse(..) | Execution time: 42 ms
+2026-02-10 10:13:31 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:13:31 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:13:31 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 30 ms
+2026-02-10 10:13:31 - Exiting method: CourseController.getAllCourses() | Execution time: 41 ms
+2026-02-10 10:13:31 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:13:31 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:13:31 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 24 ms
+2026-02-10 10:13:31 - Exiting method: CourseController.getAllCourses() | Execution time: 31 ms
+2026-02-10 10:13:41 - Entering method: StaffController.getAllStaff()
+2026-02-10 10:13:41 - Entering method: StaffServiceImpl.getAllStaff()
+2026-02-10 10:13:41 - Exiting method: StaffServiceImpl.getAllStaff() | Execution time: 10 ms
+2026-02-10 10:13:41 - Exiting method: StaffController.getAllStaff() | Execution time: 11 ms
+2026-02-10 10:13:43 - Entering method: BatchController.getAllBatches()
+2026-02-10 10:13:43 - Entering method: BatchServiceImpl.getAllBatches()
+2026-02-10 10:13:43 - Exiting method: BatchServiceImpl.getAllBatches() | Execution time: 24 ms
+2026-02-10 10:13:43 - Exiting method: BatchController.getAllBatches() | Execution time: 26 ms
+2026-02-10 10:13:44 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 10:13:44 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 10:13:44 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 21 ms
+2026-02-10 10:13:44 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 22 ms
+2026-02-10 10:13:47 - Entering method: NewsController.getAllImages()
+2026-02-10 10:13:47 - Entering method: NewsServiceImpl.getAllImages()
+2026-02-10 10:13:47 - Exiting method: NewsServiceImpl.getAllImages() | Execution time: 12 ms
+2026-02-10 10:13:47 - Exiting method: NewsController.getAllImages() | Execution time: 13 ms
+2026-02-10 10:13:50 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 10:13:50 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 10:13:50 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 14 ms
+2026-02-10 10:13:50 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 17 ms
+2026-02-10 10:14:31 - Entering method: NewsController.getLatestNews()
+2026-02-10 10:14:31 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 10:14:31 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 9 ms
+2026-02-10 10:14:31 - Exiting method: NewsController.getLatestNews() | Execution time: 10 ms
+2026-02-10 10:14:31 - Entering method: NewsController.getLatestNews()
+2026-02-10 10:14:31 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 10:14:31 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 6 ms
+2026-02-10 10:14:31 - Exiting method: NewsController.getLatestNews() | Execution time: 8 ms
+2026-02-10 10:16:17 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:16:17 - I18nController: getMessages called with lang=hi
+2026-02-10 10:16:17 - Exiting method: I18nController.getMessages(..) | Execution time: 8 ms
+2026-02-10 10:16:31 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:16:31 - I18nController: getMessages called with lang=en
+2026-02-10 10:16:31 - Exiting method: I18nController.getMessages(..) | Execution time: 9 ms
+2026-02-10 10:17:50 - Entering method: AuthController.signIn(..)
+2026-02-10 10:17:50 - Entering method: StaffServiceImpl.findByStaffUsername(..)
+2026-02-10 10:17:50 - Exiting method: StaffServiceImpl.findByStaffUsername(..) | Execution time: 20 ms
+2026-02-10 10:17:50 - Exiting method: AuthController.signIn(..) | Execution time: 320 ms
+2026-02-10 10:17:50 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 10:17:50 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 10:17:50 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 15 ms
+2026-02-10 10:17:50 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 17 ms
+2026-02-10 10:17:50 - Entering method: EnquiryController.getEnquiryByStaff(..)
+2026-02-10 10:17:50 - Entering method: EnquiryServiceImpl.getEnquiryByStaff(..)
+2026-02-10 10:17:50 - Exiting method: EnquiryServiceImpl.getEnquiryByStaff(..) | Execution time: 14 ms
+2026-02-10 10:17:50 - Exiting method: EnquiryController.getEnquiryByStaff(..) | Execution time: 16 ms
+2026-02-10 10:17:55 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:17:55 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:17:55 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 11 ms
+2026-02-10 10:17:55 - Exiting method: CourseController.getAllCourses() | Execution time: 14 ms
+2026-02-10 10:17:55 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:17:55 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:17:55 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 10 ms
+2026-02-10 10:17:55 - Exiting method: CourseController.getAllCourses() | Execution time: 16 ms
+2026-02-10 10:17:55 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:17:55 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:17:55 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 9 ms
+2026-02-10 10:17:55 - Exiting method: CourseController.getAllCourses() | Execution time: 11 ms
+2026-02-10 10:17:55 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:17:55 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:17:55 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 9 ms
+2026-02-10 10:17:55 - Exiting method: CourseController.getAllCourses() | Execution time: 11 ms
+2026-02-10 10:17:56 - Entering method: NewsController.getAllImages()
+2026-02-10 10:17:56 - Entering method: NewsServiceImpl.getAllImages()
+2026-02-10 10:17:56 - Exiting method: NewsServiceImpl.getAllImages() | Execution time: 14 ms
+2026-02-10 10:17:56 - Exiting method: NewsController.getAllImages() | Execution time: 16 ms
+2026-02-10 10:18:05 - Entering method: RecruiterController.getAllRecruiter()
+2026-02-10 10:18:05 - Entering method: RecruiterService.getAllRecruiter()
+2026-02-10 10:18:05 - Exiting method: RecruiterService.getAllRecruiter() | Execution time: 11 ms
+2026-02-10 10:18:05 - Exiting method: RecruiterController.getAllRecruiter() | Execution time: 12 ms
+2026-02-10 10:18:12 - Entering method: NewsController.getAllImages()
+2026-02-10 10:18:12 - Entering method: NewsServiceImpl.getAllImages()
+2026-02-10 10:18:12 - Exiting method: NewsServiceImpl.getAllImages() | Execution time: 26 ms
+2026-02-10 10:18:12 - Exiting method: NewsController.getAllImages() | Execution time: 28 ms
+2026-02-10 10:18:15 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:18:15 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:18:15 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 12 ms
+2026-02-10 10:18:15 - Exiting method: CourseController.getAllCourses() | Execution time: 14 ms
+2026-02-10 10:52:28 - Entering method: NewsController.getAllImages()
+2026-02-10 10:52:28 - Entering method: NewsServiceImpl.getAllImages()
+2026-02-10 10:52:28 - Exiting method: NewsServiceImpl.getAllImages() | Execution time: 16 ms
+2026-02-10 10:52:28 - Exiting method: NewsController.getAllImages() | Execution time: 18 ms
+2026-02-10 10:53:07 - Entering method: NewsController.getLatestNews()
+2026-02-10 10:53:07 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 10:53:07 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 10 ms
+2026-02-10 10:53:07 - Exiting method: NewsController.getLatestNews() | Execution time: 12 ms
+2026-02-10 10:53:07 - Entering method: NewsController.getLatestNews()
+2026-02-10 10:53:07 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 10:53:07 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 7 ms
+2026-02-10 10:53:07 - Exiting method: NewsController.getLatestNews() | Execution time: 9 ms
+2026-02-10 10:53:21 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:53:21 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:53:21 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 30 ms
+2026-02-10 10:53:21 - Exiting method: CourseController.getAllCourses() | Execution time: 38 ms
+2026-02-10 10:53:21 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:53:21 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:53:21 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 11 ms
+2026-02-10 10:53:21 - Exiting method: CourseController.getAllCourses() | Execution time: 16 ms
+2026-02-10 10:53:21 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:53:21 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:53:21 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 10 ms
+2026-02-10 10:53:21 - Exiting method: CourseController.getAllCourses() | Execution time: 15 ms
+2026-02-10 10:53:21 - Entering method: CourseController.getAllCourses()
+2026-02-10 10:53:21 - Entering method: CourseServiceImpl.getAllCourses()
+2026-02-10 10:53:21 - Exiting method: CourseServiceImpl.getAllCourses() | Execution time: 12 ms
+2026-02-10 10:53:21 - Exiting method: CourseController.getAllCourses() | Execution time: 16 ms
+2026-02-10 10:53:23 - Entering method: NewsController.getAllImages()
+2026-02-10 10:53:23 - Entering method: NewsServiceImpl.getAllImages()
+2026-02-10 10:53:23 - Exiting method: NewsServiceImpl.getAllImages() | Execution time: 9 ms
+2026-02-10 10:53:23 - Exiting method: NewsController.getAllImages() | Execution time: 11 ms
+2026-02-10 10:53:38 - Entering method: NewsController.getAllImages()
+2026-02-10 10:53:38 - Entering method: NewsServiceImpl.getAllImages()
+2026-02-10 10:53:38 - Exiting method: NewsServiceImpl.getAllImages() | Execution time: 14 ms
+2026-02-10 10:53:38 - Exiting method: NewsController.getAllImages() | Execution time: 16 ms
+2026-02-10 10:54:04 - Entering method: NewsController.getLatestNews()
+2026-02-10 10:54:04 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 10:54:04 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 8 ms
+2026-02-10 10:54:04 - Exiting method: NewsController.getLatestNews() | Execution time: 10 ms
+2026-02-10 10:54:04 - Entering method: NewsController.getLatestNews()
+2026-02-10 10:54:04 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 10:54:04 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 9 ms
+2026-02-10 10:54:04 - Exiting method: NewsController.getLatestNews() | Execution time: 11 ms
+2026-02-10 10:54:28 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:28 - I18nController: getMessages called with lang=hi
+2026-02-10 10:54:28 - Exiting method: I18nController.getMessages(..) | Execution time: 2 ms
+2026-02-10 10:54:30 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:30 - I18nController: getMessages called with lang=en
+2026-02-10 10:54:30 - Exiting method: I18nController.getMessages(..) | Execution time: 9 ms
+2026-02-10 10:54:31 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:31 - I18nController: getMessages called with lang=hi
+2026-02-10 10:54:31 - Exiting method: I18nController.getMessages(..) | Execution time: 10 ms
+2026-02-10 10:54:33 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:33 - I18nController: getMessages called with lang=en
+2026-02-10 10:54:33 - Exiting method: I18nController.getMessages(..) | Execution time: 11 ms
+2026-02-10 10:54:34 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:34 - I18nController: getMessages called with lang=hi
+2026-02-10 10:54:34 - Exiting method: I18nController.getMessages(..) | Execution time: 10 ms
+2026-02-10 10:54:37 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:37 - I18nController: getMessages called with lang=en
+2026-02-10 10:54:37 - Exiting method: I18nController.getMessages(..) | Execution time: 8 ms
+2026-02-10 10:54:38 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:38 - I18nController: getMessages called with lang=hi
+2026-02-10 10:54:38 - Exiting method: I18nController.getMessages(..) | Execution time: 9 ms
+2026-02-10 10:54:38 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:38 - I18nController: getMessages called with lang=en
+2026-02-10 10:54:38 - Exiting method: I18nController.getMessages(..) | Execution time: 8 ms
+2026-02-10 10:54:39 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:39 - I18nController: getMessages called with lang=hi
+2026-02-10 10:54:39 - Exiting method: I18nController.getMessages(..) | Execution time: 8 ms
+2026-02-10 10:54:40 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:40 - I18nController: getMessages called with lang=en
+2026-02-10 10:54:40 - Exiting method: I18nController.getMessages(..) | Execution time: 11 ms
+2026-02-10 10:54:41 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:41 - I18nController: getMessages called with lang=hi
+2026-02-10 10:54:41 - Exiting method: I18nController.getMessages(..) | Execution time: 6 ms
+2026-02-10 10:54:42 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:42 - I18nController: getMessages called with lang=en
+2026-02-10 10:54:42 - Exiting method: I18nController.getMessages(..) | Execution time: 8 ms
+2026-02-10 10:54:43 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:43 - I18nController: getMessages called with lang=hi
+2026-02-10 10:54:43 - Exiting method: I18nController.getMessages(..) | Execution time: 7 ms
+2026-02-10 10:54:43 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:43 - I18nController: getMessages called with lang=en
+2026-02-10 10:54:43 - Exiting method: I18nController.getMessages(..) | Execution time: 10 ms
+2026-02-10 10:54:44 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:44 - I18nController: getMessages called with lang=hi
+2026-02-10 10:54:44 - Exiting method: I18nController.getMessages(..) | Execution time: 12 ms
+2026-02-10 10:54:45 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:45 - I18nController: getMessages called with lang=en
+2026-02-10 10:54:45 - Exiting method: I18nController.getMessages(..) | Execution time: 7 ms
+2026-02-10 10:54:46 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:46 - I18nController: getMessages called with lang=hi
+2026-02-10 10:54:46 - Exiting method: I18nController.getMessages(..) | Execution time: 9 ms
+2026-02-10 10:54:47 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:47 - I18nController: getMessages called with lang=en
+2026-02-10 10:54:47 - Exiting method: I18nController.getMessages(..) | Execution time: 9 ms
+2026-02-10 10:54:50 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:50 - I18nController: getMessages called with lang=hi
+2026-02-10 10:54:50 - Exiting method: I18nController.getMessages(..) | Execution time: 7 ms
+2026-02-10 10:54:51 - Entering method: I18nController.getMessages(..)
+2026-02-10 10:54:51 - I18nController: getMessages called with lang=en
+2026-02-10 10:54:51 - Exiting method: I18nController.getMessages(..) | Execution time: 6 ms
+2026-02-10 11:17:35 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-10 11:17:35 - Graceful shutdown complete
+2026-02-10 11:17:35 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 11:17:35 - HikariPool-1 - Shutdown initiated...
+2026-02-10 11:17:35 - HikariPool-1 - Shutdown completed.
+2026-02-10 13:14:29 - Starting ComputerSeekhoApplication v0.0.1-SNAPSHOT using Java 21.0.1 with PID 23048 (C:\Users\NT7\Desktop\jar\comp.jar started by NT7 in C:\Users\NT7\Desktop\jar)
+2026-02-10 13:14:29 - No active profile set, falling back to 1 default profile: "default"
+2026-02-10 13:14:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10 13:14:32 - Finished Spring Data repository scanning in 185 ms. Found 17 JPA repository interfaces.
+2026-02-10 13:14:36 - Tomcat initialized with port 8080 (http)
+2026-02-10 13:14:36 - Starting service [Tomcat]
+2026-02-10 13:14:36 - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-10 13:14:36 - Root WebApplicationContext: initialization completed in 6199 ms
+2026-02-10 13:14:36 - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-10 13:14:37 - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-02-10 13:14:38 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10 13:14:38 - HikariPool-1 - Starting...
+2026-02-10 13:14:38 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43549c6c
+2026-02-10 13:14:38 - HikariPool-1 - Start completed.
+2026-02-10 13:14:38 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10 13:14:38 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/computerseekhoapp]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: computerseekhoapp/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-10 13:14:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10 13:14:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 13:14:41 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-10 13:14:43 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10 13:14:44 - Global AuthenticationManager configured with AuthenticationProvider bean with name usernamePasswordAuthentication
+2026-02-10 13:14:47 - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-10 13:14:47 - Tomcat started on port 8080 (http) with context path '/'
+2026-02-10 13:14:47 - Started ComputerSeekhoApplication in 18.947 seconds (process running for 20.62)
+2026-02-10 13:15:25 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10 13:15:25 - Initializing Servlet 'dispatcherServlet'
+2026-02-10 13:15:25 - Completed initialization in 8 ms
+2026-02-10 13:15:25 - Entering method: I18nController.getMessages(..)
+2026-02-10 13:15:25 - I18nController: getMessages called with lang=en
+2026-02-10 13:15:25 - Exiting method: I18nController.getMessages(..) | Execution time: 14 ms
+2026-02-10 13:15:26 - Entering method: I18nController.getMessages(..)
+2026-02-10 13:15:26 - I18nController: getMessages called with lang=en
+2026-02-10 13:15:26 - Exiting method: I18nController.getMessages(..) | Execution time: 15 ms
+2026-02-10 13:15:26 - Entering method: NewsController.getLatestNews()
+2026-02-10 13:15:26 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 13:15:26 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 32 ms
+2026-02-10 13:15:26 - Exiting method: NewsController.getLatestNews() | Execution time: 38 ms
+2026-02-10 13:15:26 - Entering method: NewsController.getLatestNews()
+2026-02-10 13:15:26 - Entering method: NewsServiceImpl.getLatestNews()
+2026-02-10 13:15:26 - Exiting method: NewsServiceImpl.getLatestNews() | Execution time: 25 ms
+2026-02-10 13:15:26 - Exiting method: NewsController.getLatestNews() | Execution time: 57 ms
+2026-02-10 13:30:03 - Entering method: I18nController.getMessages(..)
+2026-02-10 13:30:03 - I18nController: getMessages called with lang=hi
+2026-02-10 13:30:04 - Exiting method: I18nController.getMessages(..) | Execution time: 26 ms

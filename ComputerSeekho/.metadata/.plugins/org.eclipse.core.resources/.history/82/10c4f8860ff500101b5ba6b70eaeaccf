@@ -1,0 +1,32 @@
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "closure_reason_master")
+public class ClosureReasonMaster {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "closure_reason_id")
+    private Integer closureReasonId;   // PK Auto generated
+
+    @Column(name = "closure_reason_desc", length = 200, nullable = false)
+    private String closureReasonDesc;  // e.g. Time not suitable, Fees too high, Location issue
+
+    // ===== Getters & Setters =====
+
+    public Integer getClosureReasonId() {
+        return closureReasonId;
+    }
+
+    public void setClosureReasonId(Integer closureReasonId) {
+        this.closureReasonId = closureReasonId;
+    }
+
+    public String getClosureReasonDesc() {
+        return closureReasonDesc;
+    }
+
+    public void setClosureReasonDesc(String closureReasonDesc) {
+        this.closureReasonDesc = closureReasonDesc;
+    }
+}

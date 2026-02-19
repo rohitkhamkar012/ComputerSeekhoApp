@@ -1,0 +1,79 @@
+import jakarta.persistence.*;
+import java.time.LocalDate;
+
+@Entity
+@Table(name = "followup")
+public class Followup {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "followup_id", length = 5)
+    private Integer followupId;   // Auto generated PK
+
+    @ManyToOne
+    @JoinColumn(name = "enquiry_id", nullable = false)
+    private Enquiry enquiry;      // Ref → Enquiry
+
+    @ManyToOne
+    @JoinColumn(name = "staff_id", nullable = false)
+    private StaffMaster staff;    // Ref → Staff Master
+
+    @Column(name = "followup_date")
+    private LocalDate followupDate;
+
+    @Column(name = "followup_msg", length = 500)
+    private String followupMsg;
+
+    @Column(name = "is_active")
+    private Boolean isActive = false; // 1 = On, 0 = Off, Default = 0
+
+    // ===== Getters & Setters =====
+
+    public Integer getFollowupId() {
+        return followupId;
+    }
+
+    public void setFollowupId(Integer followupId) {
+        this.followupId = followupId;
+    }
+
+    public Enquiry getEnquiry() {
+        return enquiry;
+    }
+
+    public void setEnquiry(Enquiry enquiry) {
+        this.enquiry = enquiry;
+    }
+
+    public StaffMaster getStaff() {
+        return staff;
+    }
+
+    public void setStaff(StaffMaster staff) {
+        this.staff = staff;
+    }
+
+    public LocalDate getFollowupDate() {
+        return followupDate;
+    }
+
+    public void setFollowupDate(LocalDate followupDate) {
+        this.followupDate = followupDate;
+    }
+
+    public String getFollowupMsg() {
+        return followupMsg;
+    }
+
+    public void setFollowupMsg(String followupMsg) {
+        this.followupMsg = followupMsg;
+    }
+
+    public Boolean getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(Boolean active) {
+        isActive = active;
+    }
+}

@@ -1,0 +1,71 @@
+package com.example.service.impl;
+
+import com.example.entity.CourseMaster;
+import com.example.repository.CourseMasterRepository;
+import com.example.service.CourseMasterService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class CourseMasterServiceImpl implements CourseMasterService {
+
+    @Autowired
+    private CourseMasterRepository courseMasterRepository;
+
+    @Override
+    public CourseMaster createCourse(CourseMaster courseMaster) {
+        return courseMasterRepository.save(courseMaster);
+    }
+
+    @Override
+    public CourseMaster updateCourse(Integer courseId, CourseMaster updatedCourse) {
+
+        CourseMaster existingCourse = courseMasterRepository.findById(courseId)
+                .orElseThrow(() -> new RuntimeException("Course not found with id: " + courseId));
+
+        existingCourse.setCourseName(updatedCourse.getCourseName());
+        existingCourse.setCourseDescription(updatedCourse.getCourseDescription());
+        existingCourse.setCourseDuration(updatedCourse.getCourseDuration());
+        existingCourse.setCourseFees(updatedCourse.getCourseFees());
+        existingCourse.setCourseFeesFrom(updatedCourse.getCourseFeesFrom());
+        existingCourse.setCourseFeesTo(updatedCourse.getCourseFeesTo());
+        existingCourse.setCourseSyllabus(updatedCourse.getCourseSyllabus());
+        existingCourse.setAgeGrpType(updatedCourse.getAgeGrpType());
+        existingCourse.setCourseIsActive(updatedCourse.getCourseIsActive());
+        existingCourse.setCoverPhoto(updatedCourse.getCoverPhoto());
+        existingCourse.setIntroVideo(updatedCourse.getIntroVideo());
+
+        return courseMasterRepository.save(existingCourse);
+    }
+
+    @Override
+    public CourseMaster getCourseById(Integer courseId) {
+        return courseMasterRepository.findById(courseId)
+                .orElseThrow(() -> new RuntimeException("Course not found with id: " + courseId));
+    }
+
+    @Override
+    public List<CourseMaster> getAllCourses() {
+        return courseMasterRepository.findAll();
+    }
+
+    @Override
+    public List<CourseMaster> getActiveCourses() {
+        return courseMasterRepository.findByCourseIsActiveTrue();
+    }
+
+    @Override
+    public List<CourseMaster> getCoursesByAgeGroup(String ageGrpType) {
+        return courseMasterRepository.findByAgeGrpTypeAndCourseIsActiveTrue(ageGrpType);
+    }
+
+    @Override
+    public void deleteCourse(Integer courseId) {
+        if (!courseMasterRepository.existsById(courseId)) {
+            throw new RuntimeException("Course not found with id: " + courseId);
+        }
+        courseMasterRepository.deleteById(courseId);
+    }
+}

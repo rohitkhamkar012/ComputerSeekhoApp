@@ -1,0 +1,56 @@
+import jakarta.persistence.*;
+import java.time.LocalDate;
+
+@Entity
+@Table(name = "receipt")
+public class Receipt {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "receipt_id")
+    private Integer receiptId;   // PK Auto generated
+
+    @Column(name = "receipt_date")
+    private LocalDate receiptDate;
+
+    @Column(name = "receipt_amount")
+    private Double receiptAmount;   // From Payment
+
+    @OneToOne
+    @JoinColumn(name = "payment_id", nullable = false)
+    private Payment payment;   // Ref → Payment
+
+    // ===== Getters & Setters =====
+
+    public Integer getReceiptId() {
+        return receiptId;
+    }
+
+    public void setReceiptId(Integer receiptId) {
+        this.receiptId = receiptId;
+    }
+
+    public LocalDate getReceiptDate() {
+        return receiptDate;
+    }
+
+    public void setReceiptDate(LocalDate receiptDate) {
+        this.receiptDate = receiptDate;
+    }
+
+    public Double getReceiptAmount() {
+        return receiptAmount;
+    }
+
+    public void setReceiptAmount(Double receiptAmount) {
+        this.receiptAmount = receiptAmount;
+    }
+
+    public Payment getPayment() {
+        return payment;
+    }
+
+    public void setPayment(Payment payment) {
+        this.payment = payment;
+    }
+}

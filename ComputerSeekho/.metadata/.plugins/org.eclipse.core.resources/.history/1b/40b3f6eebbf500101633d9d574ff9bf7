@@ -1,0 +1,118 @@
+package com.example.controller;
+
+import com.example.dto.CourseMasterDTO;
+import com.example.entity.CourseMaster;
+import com.example.service.CourseMasterService;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+@RestController
+@RequestMapping("/api/courses")
+public class CourseMasterController {
+
+    @Autowired
+    private CourseMasterService courseMasterService;
+
+    // Create a new course
+    @PostMapping
+    public ResponseEntity<CourseMasterDTO> createCourse(@Valid @RequestBody CourseMasterDTO dto) {
+        // Convert DTO to entity
+        CourseMaster course = mapToEntity(dto);
+        CourseMaster savedCourse = courseMasterService.createCourse(course);
+
+        return ResponseEntity.ok(mapToDTO(savedCourse));
+    }
+
+    // Update a course
+    @PutMapping("/{id}")
+    public ResponseEntity<CourseMasterDTO> updateCourse(@PathVariable Integer id, @Valid @RequestBody CourseMasterDTO dto) {
+        CourseMaster course = mapToEntity(dto);
+        CourseMaster updated = courseMasterService.updateCourse(id, course);
+        return ResponseEntity.ok(mapToDTO(updated));
+    }
+
+    // Get course by ID
+    @GetMapping("/{id}")
+    public ResponseEntity<CourseMasterDTO> getCourseById(@PathVariable Integer id) {
+        CourseMaster course = courseMasterService.getCourseById(id);
+        return ResponseEntity.ok(mapToDTO(course));
+    }
+
+    // Get all courses
+    @GetMapping
+    public ResponseEntity<List<CourseMasterDTO>> getAllCourses() {
+        List<CourseMaster> courses = courseMasterService.getAllCourses();
+        List<CourseMasterDTO> dtos = courses.stream().map(this::mapToDTO).collect(Collectors.toList());
+        return ResponseEntity.ok(dtos);
+    }
+
+    // Get active courses
+    @GetMapping("/active")
+    public ResponseEntity<List<CourseMasterDTO>> getActiveCourses() {
+        List<CourseMaster> courses = courseMasterService.getActiveCourses();
+        List<CourseMasterDTO> dtos = courses.stream().map(this::mapToDTO).collect(Collectors.toList());
+        return ResponseEntity.ok(dtos);
+    }
+
+    // Get courses by age group
+    @GetMapping("/age-group/{ageGrp}")
+    public ResponseEntity<List<CourseMasterDTO>> getCoursesByAgeGroup(@PathVariable String ageGrp) {
+        List<CourseMaster> courses = courseMasterService.getCoursesByAgeGroup(ageGrp);
+        List<CourseMasterDTO> dtos = courses.stream().map(this::mapToDTO).collect(Collectors.toList());
+        return ResponseEntity.ok(dtos);
+    }
+
+    // Delete course
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteCourse(@PathVariable Integer id) {
+        courseMasterService.deleteCourse(id);
+        return ResponseEntity.ok("Course deleted successfully");
+    }
+
+    // ===== Helper Methods for Mapping =====
+    private CourseMaster mapToEntity(CourseMasterDTO dto) {
+        CourseMaster course = new CourseMaster();
+        course.setCourseId(dto.getCourseId());
+        course.setCourseName(dto.getCourseName());
+        course.setCourseDescription(dto.getCourseDescription());
+        course.setCourseDuration(dto.getCourseDuration());
+        course.setCourseFees(dto.getCourseFees());
+        course.setCourseFeesFrom(dto.getCourseFeesFrom());
+        course.setCourseFeesTo(dto.getCourseFeesTo());
+        course.setCourseSyllabus(dto.getCourseSyllabus());
+        course.setAgeGrpType(dto.getAgeGrpType());
+        course.setCourseIsActive(dto.getCourseIsActive());
+        course.setCoverPhoto(dto.getCoverPhoto());
+
+        if (dto.getIntroVideoId() != null) {
+            // Only set video ID, full VideoMaster entity will be handled in Service if needed
+            course.setIntroVideo(new com.example.entity.VideoMaster());
+            course.getIntroVideo().setVideoId(dto.getIntroVideoId());
+        }
+        return course;
+    }
+
+    private CourseMasterDTO mapToDTO(CourseMaster course) {
+        CourseMasterDTO dto = new CourseMasterDTO();
+        dto.setCourseId(course.getCourseId());
+        dto.setCourseName(course.getCourseName());
+        dto.setCourseDescription(course.getCourseDescription());
+        dto.setCourseDuration(course.getCourseDuration());
+        dto.setCourseFees(course.getCourseFees());
+        dto.setCourseFeesFrom(course.getCourseFeesFrom());
+        dto.setCourseFeesTo(course.getCourseFeesTo());
+        dto.setCourseSyllabus(course.getCourseSyllabus());
+        dto.setAgeGrpType(course.getAgeGrpType());
+        dto.setCourseIsActive(course.getCourseIsActive());
+        dto.setCoverPhoto(course.getCoverPhoto());
+        if (course.getIntroVideo() != null) {
+            dto.setIntroVideoId(course.getIntroVideo().getVideoId());
+        }
+        return dto;
+    }
+}

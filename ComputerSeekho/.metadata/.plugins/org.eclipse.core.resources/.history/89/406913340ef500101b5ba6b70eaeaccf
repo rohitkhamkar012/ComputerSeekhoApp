@@ -1,0 +1,32 @@
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "payment_type_master")
+public class PaymentTypeMaster {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "payment_type_id")
+    private Integer paymentTypeId;   // PK Auto generated
+
+    @Column(name = "payment_type_desc", length = 50, nullable = false)
+    private String paymentTypeDesc;  // Cheque / DD / Bank Transfer / Cash etc.
+
+    // ===== Getters & Setters =====
+
+    public Integer getPaymentTypeId() {
+        return paymentTypeId;
+    }
+
+    public void setPaymentTypeId(Integer paymentTypeId) {
+        this.paymentTypeId = paymentTypeId;
+    }
+
+    public String getPaymentTypeDesc() {
+        return paymentTypeDesc;
+    }
+
+    public void setPaymentTypeDesc(String paymentTypeDesc) {
+        this.paymentTypeDesc = paymentTypeDesc;
+    }
+}
